@@ -1,0 +1,39 @@
+.coins-toast {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: $shadow-dropdown;
+  z-index: 100;
+  padding: 8px 12px;
+  @include vertical-align;
+  @include text-body-1;
+  color: $color-white;
+  background-color: $color-black-active;
+  border-radius: 4px;
+  @include animation('toast-appear 1s ease-out');
+
+  .dismiss {
+    text-transform: uppercase;
+    @include text-caption-bold;
+    color: $color-accent;
+    margin-left: 16px;
+    border: none;
+    background: none;
+    padding: 0;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+@include keyframes(toast-appear) {
+  0%, 60% { 
+    opacity: 0;
+    bottom: -32px;
+  }
+  100% { 
+    opacity: 1;
+    bottom: 32px;
+  }
+}

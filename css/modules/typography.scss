@@ -1,0 +1,18 @@
+///////////////////////////////////
+// Headings
+///////////////////////////////////
+
+h1 {
+  @include text-title;
+  margin-bottom: 0;
+}
+
+h2 {
+  @include text-subheading;
+  margin-bottom: 0;
+}
+
+h5 {
+  @include text-body-2;
+  margin-bottom: 0;
+}

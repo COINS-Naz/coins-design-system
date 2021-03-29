@@ -1,0 +1,86 @@
+.pagination-nav {
+  position: fixed;
+  bottom: 20px;
+  left: calc(50% + 192px);
+  transform: translateX(-50%);
+  background-color: $color-white;
+  border: 1px solid $color-separator;
+  border-radius: 4px;
+  padding: 8px;
+  box-shadow: $shadow-dropdown;
+  z-index: 8;
+  .pagination {
+    margin: 0;
+    .page-item {
+      &.active {
+        .page-link {
+          background-color: $color-black;
+          color: $color-white;
+          border-color: $color-black;
+          &:hover {
+            background-color: $color-black;
+          }
+        }
+      }
+      &.disabled {
+        .page-link {
+          color: $color-black-3;
+          border: none;
+        }
+      }
+      &.previous_page, &.prev,
+      &.next_page, &.next {
+        position: relative;
+        &.disabled {
+          color: $color-black-3;
+        }
+        &:before {
+          position: absolute;
+          font-family: $icoins-font-family;
+          width: 32px;
+          text-align: center;
+          font-size: 24px;
+          line-height: 26px;
+        }
+        .page-link {
+          text-indent: -9999px;
+          border-color: transparent;
+          // background-color: transparent;
+        }
+      }
+      &.previous_page, &.prev {
+        &:before {
+          content: $icn-Chevron-Left;
+        }
+      }
+      &.next_page, &.next {
+        &:before {
+          content: $icn-Chevron-Right;
+        }
+      }
+      .page-link {
+        border-radius: 3px;
+        background-color: transparent;
+        color: $color-black;
+        margin: 0;
+        @include text-caption-bold;
+        border-color: $color-separator;
+        transition: all .3s ease-out;
+        padding: 4px;
+        min-width: 32px;
+        text-align: center;
+        &:hover {
+          background-color: $color-input;
+          border: 1px solid $color-separator;
+        }
+        &:focus, &:active {
+          outline: none;
+          box-shadow: 0 0 0 2px $color-accent;
+        }
+      }
+      & + .page-item {
+        margin-left: 4px;
+      }
+    }
+  }
+}

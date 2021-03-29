@@ -1,0 +1,195 @@
+.input {
+  border: 1px solid $color-separator;
+  border-radius: 4px;
+  background-color: $color-white;
+  position: relative;
+  input, select, textarea {
+    @include text-caption;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    color: $color-black;
+    background-color: transparent;
+    padding: 5px 12px;
+    &::placeholder {
+      color: $color-black-3;
+    }
+    // States
+    &:focus, &:active {
+      outline: none;
+      box-shadow: 0 0 0 2px $color-accent;
+    }
+  }
+  &:hover {
+    border-color: $color-black-3;
+  }
+
+  // Types
+  
+  // Select
+  &.select {
+    select {
+      appearance: none;
+      padding-right: 28px;
+    }
+    &:before {
+      position: absolute;
+      top: 1px;
+      right: 8px;
+      pointer-events: none;
+      font-family: $icoins-font-family;
+      content: $icn-Chevron-Down;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  // Search
+  &.search {
+    input {
+      padding-left: 32px;
+    }
+    &:before {
+      position: absolute;
+      top: 1px;
+      left: 8px;
+      pointer-events: none;
+      font-family: $icoins-font-family;
+      content: $icn-Search;
+    }
+  }
+  // Date
+  &.date {
+    input {
+      padding-right: 32px;
+    }
+    &:before {
+      position: absolute;
+      top: 1px;
+      right: 8px;
+      pointer-events: none;
+      font-family: $icoins-font-family;
+      content: $icn-Calendar;
+    }
+  }
+  // Increment
+  &.increment {
+    input {
+      padding-right: 2px;
+      width: 48px;
+    }
+  }
+}
+
+
+.checkbox {
+  cursor: pointer;
+  user-select: none;
+  @include text-body-1;
+  line-height: 16px;
+  color: $color-black;
+  padding-left: 24px;
+  margin: 0;
+  position: relative;
+  span {
+    &:before {
+      content: '';
+      @include text-body-1;
+      line-height: 14px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      border: 1px solid $color-black-7;
+      background-color: $color-white;
+      border-radius: 2px;
+      color: $color-white;
+    }
+  }
+  input[type="checkbox"] {
+    display: none;
+    &:checked + span:before {
+      content: $icn-Check;
+      font-family: $icoins-font-family;
+      background-color: $color-black;
+      border-color: $color-black;
+      .thead & {
+        border-color: $color-white-50;
+      }
+    }
+  }
+  &.no-label {
+    display: inline;
+    height: 16px;
+    width: 16px;
+    padding: 0;
+  }
+}
+
+.checkbox-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li+li {
+    margin-top: 12px;
+  }
+  .checkbox-list{
+    margin-left: 20px;
+    margin-top: 12px;
+  }
+  &+.checkbox-list {
+    margin-top: 12px;
+  }
+}
+
+.inputs-group {
+  margin-bottom: 12px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &.inline {
+    display: inline-flex;
+    align-items: center;
+    &.full-width {
+      display: flex;
+      & > * {
+        flex-grow: 1;
+      }
+    }
+    & > * + * {
+      margin-left: 8px;
+    }
+  }
+}
+.with-label {
+  margin-bottom: 12px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &.inline {
+    @include vertical-align;
+    margin-bottom: 0;
+    .label + .input,
+    .input + .label {
+        margin-left: 12px;
+    }
+    & + .with-label,
+    & + .button,
+    & + .button-merged {
+      margin-bottom: 0;
+      margin-left: 16px;
+    }
+  }
+  .label {
+    @include text-caption;
+    white-space: nowrap;
+    color: $color-black;
+    margin-bottom: 4px;
+  }
+  .label-subtitle {
+    @include text-small;
+    margin-bottom: 8px;
+    color: $color-black-7;
+  }
+}
