@@ -1,0 +1,17 @@
+.dropdown-menu {
+  border-radius: 4px;
+  border: 1px solid $color-separator;
+  box-shadow: $shadow-dropdown;
+  .dropdown-item {
+    @include text-body-1;
+    color: $color-black;
+    padding: 8px 32px;
+    @include vertical-align;
+    &:hover {
+      background-color: $color-input;
+    }
+    .pill {
+      margin-left: 4px;
+    }
+  }
+}

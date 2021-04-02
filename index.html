@@ -1,0 +1,44 @@
+---
+layout: page
+title: Buttons
+---
+
+
+<p class="page-information">A button means an operation (or a series of operations).<br>Clicking a button will trigger corresponding business logic.</p>
+
+<h5>Types</h5>
+{% capture button %}
+<!-- Primary -->
+<button class="button cta" type="button">Primary</button>
+<!-- Secondary -->
+<button class="button" type="button">Default</button>
+{% endcapture %}
+{% include snippet.html code=button %}
+
+
+<h5>Adding an Icon</h5>
+<p class="page-information">You can add an <span class="snip">icon</span> class to the button. <br>Pick one of the available <a class="link" href="#">icons</a> and place it inside the button.</p>
+{% capture icon %}
+<!-- Primary -->
+<button class="button icon cta" type="button">
+  <i class="icn icn-Plus"></i> Primary
+</button>
+<!-- Secondary -->
+<button class="button icon" type="button">
+  <i class="icn icn-Plus"></i> Default
+</button>
+{% endcapture %}
+{% include snippet.html code=icon %}
+
+
+<h5>Size</h5>
+<p class="page-information">You can specify button size with additional modifier <span class="snip">small</span><span class="snip">large</span> classes.</p>
+{% capture size %}
+<!-- Small -->
+<button class="button small" type="button">Small</button>
+<!-- Default -->
+<button class="button" type="button">Default</button>
+<!-- Large -->
+<button class="button large" type="button">Large</button>
+{% endcapture %}
+{% include snippet.html code=size %}

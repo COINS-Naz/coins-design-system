@@ -1,0 +1,9 @@
+author: Coins Construction Cloud
+title: Coins Construction Cloud – Design System
+description: Coins Construction Cloud - Design System
+
+cssLink: https://raw.githubusercontent.com/COINS-Naz/coins-design-system/main/css/app.css
+
+sass:
+  sass_dir: _sass
+  style: compressed

@@ -1,0 +1,117 @@
+.coins-table {
+  background-color: $color-white;
+  width: 100%;
+  position: relative;
+  .table-row {
+    .cell {
+      @include text-caption-bold;
+      flex-grow: 0;
+      padding: 12px;
+      border-bottom: 1px solid $color-separator;
+      vertical-align: top;
+      &.auto {
+        flex-grow: 1;
+      }
+      .icn {
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+    &.row-selected {
+      .cell {
+        background-color: $color-input;
+      }
+    }
+  }
+  .thead {
+    .cell {
+      background-color: $color-black;
+      color: $color-white;
+      position: sticky;
+      top: sum($header1-h, $header2-h, 20px);
+      z-index: 3;
+      border-bottom: none;
+      &[align="right"] {
+        text-align: right;
+      }
+    }
+    .subnav + .content & .cell,
+    .subnav + .sidebar + .content & .cell {
+      top: sum($header1-h, $header2-h, $header3-h, 20px);
+    }
+    .subnav.config + .content & .cell,
+    .subnav.config + .sidebar + .content & .cell {
+      top: sum($header1-h, $header2-h, $header3-h-config, 20px);
+    }
+  }
+  .tbody {
+    box-shadow: 0 0 4px rgba(0,0,0,.1);
+  }
+  &.products {
+    table-layout: fixed;
+    .tbody {
+      .cell {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .table-row {
+        border-left: 1px solid $color-separator;
+        border-right: 1px solid $color-separator;
+        &:hover {
+          outline: 2px solid $color-black-active;
+          box-shadow: $shadow-dropdown;
+        }
+      }
+    }
+  }
+  .table-actions {
+    white-space: nowrap;
+  }
+  .table-action {
+    border: none;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    border-radius: 4px;
+    color: $color-black-7;
+    background-color: transparent;
+    &:hover, &:active, &:focus {
+      background-color: $color-input;
+      text-decoration: none;
+    }
+    &:focus {
+      outline: none;
+    }
+    &+.table-action {
+      margin-left: 12px;
+    }
+    &.danger {
+      color: $color-red;
+    }
+  }
+}
+
+.table-overflow-line {
+  position: sticky;
+  background: #fbfbfb;
+  height: 20px;
+  top: sum($header1-h, $header2-h);
+  margin-top: -20px;
+  margin-left: -32px;
+  margin-right: -32px;
+  z-index: 3;
+  .subnav + .content &,
+  .subnav + .sidebar + .content & {
+    top: sum($header1-h, $header2-h, $header3-h);
+  }
+  .subnav.config + .content &,
+  .subnav.config + .sidebar + .content & {
+    top: sum($header1-h, $header2-h, $header3-h-config);
+  }
+}
+
+
+.table-shadow {
+  box-shadow: 0 0 4px rgba(0,0,0,.1);
+}

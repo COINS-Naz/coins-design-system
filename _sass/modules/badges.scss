@@ -1,0 +1,32 @@
+.badge {
+  display: inline-block;
+  @include text-small-bold;
+  padding: 3px 8px;
+  border-radius: 9px;
+  border: 1px solid $color-black-3;
+  color: $color-black;
+  background-color: $color-white;
+  &.success {
+    color: $color-white;
+    background-color: $color-green;
+    border-color: $color-green;
+  }
+  &.warning {
+    color: $color-black;
+    background-color: $color-yellow;
+    border-color: $color-yellow;
+  }
+  &.danger {
+    color: $color-white;
+    background-color: $color-red;
+    border-color: $color-red;
+  }
+  &.muted {
+    color: $color-black;
+    background-color: $color-black-3;
+    border-color: $color-black-3;
+  }
+  &+.badge {
+    margin-left: 4px;
+  }
+}

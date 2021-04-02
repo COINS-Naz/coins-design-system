@@ -1,0 +1,46 @@
+// COINS Styles
+@import "fonts";
+@import "icoins";
+@import "variables";
+@import "functions";
+
+@import "modules/typography";
+@import "modules/buttons";
+@import "modules/inputs";
+@import "modules/modals";
+@import "modules/pagination";
+@import "modules/widgets";
+@import "modules/tables";
+@import "modules/badges";
+@import "modules/toast";
+
+@import "modules/navigation";
+@import "modules/sidebar";
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-grey {
+  background-color: $color-light-grey;
+}
+
+.page-information {
+  @include text-body-1;
+  color: $color-black-7;
+  margin-bottom: 20px;
+
+  p {
+    margin-bottom: 0;
+
+    &+p {
+      margin-top: 12px;
+    }
+  }
+}
+

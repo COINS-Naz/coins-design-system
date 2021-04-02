@@ -1,0 +1,119 @@
+.button {
+  display: inline-block;
+  color: $color-black;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: $color-white;
+  border: 1px solid $color-separator;
+  padding: 10px 16px;
+  white-space: nowrap;
+  @include text-body-1-bold;
+  border-radius: 4px;
+  transition: all .3s ease-in-out;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    background-color: $color-input;
+    color: $color-black;
+  }
+  &:focus, &:active {
+    outline: none;
+    box-shadow: 0 0 0 2px $color-accent;
+  }
+  &+.button,
+  &+.button-merged {
+    margin-left: 12px;
+  }
+  // CTA
+  &.cta,
+  &.active {
+    background-color: $color-black;
+    color: $color-white;
+    &:hover {
+      background-color: $color-black-active;
+    }
+  }
+  // Sizes
+  &.large {
+    padding: 14px 16px;
+  }
+  &.small {
+    padding: 3px 12px;
+  }
+  // With Icon
+  &.icon {
+    padding: 8px 12px;
+    @include vertical-align;
+    display: inline-flex;
+    &.large {
+      padding: 12px;
+    }
+    &.small {
+      padding: 1px 8px;
+    }
+    .icn {
+      font-size: 24px;
+      margin-right: 4px;
+      &:only-child,
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  // Dropdown button
+  &.dropdown {
+    padding: 8px;
+    text-align: left;
+    position: relative;
+    span {
+      display: block;
+      white-space: nowrap;
+      @include text-caption-bold;
+      &.small {
+        @include text-small;
+        color: $color-black-7;
+      }
+    }
+    
+    // Product dropdown
+    &.product {
+      padding: 8px 8px 8px 44px;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        height: 28px;
+        width: 28px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+      &.marketplace:before {
+        background-image: url('../assets/Product_Construction_Marketplace_Color.svg');
+      }
+    }
+  }
+}
+
+.button-group {
+  white-space: nowrap;
+  @include vertical-align;
+}
+
+.button-merged {
+  @include vertical-align;
+  .button {
+    margin: 0;
+    &:first-child {
+      border-radius: 4px 0 0 4px;
+    }
+    &+.button {
+      border-radius: 0 4px 4px 0;
+      border-left-color: transparent;
+      margin-left: 0;
+    }
+  }
+}
