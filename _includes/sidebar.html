@@ -1,20 +1,22 @@
 <aside class="sidebar">
-  <div class="sidebar-section-title">
-    <span>Section Title</span>
-  </div>
-  <section class="sidebar-section no-border">
-    <ul class="sidebar-menu-items">
-      {% for post in site.posts %}
-        {% if page.url == post.url %}
-          <li>
-            <a class="active" href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
-          </li>
-        {% else %}
-          <li>
-            <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </section>
+  {% for category in site.categories %}
+    <div class="sidebar-section-title">
+      <span>{{ category[0] }}</span>
+    </div>
+    <section class="sidebar-section no-border">
+      <ul class="sidebar-menu-items">
+        {% for post in category[1] %}
+          {% if page.url == post.url %}
+            <li>
+              <a class="active" href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
+            </li>
+          {% else %}
+            <li>
+              <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </section>
+  {% endfor %}
 </aside>
