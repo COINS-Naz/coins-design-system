@@ -2,8 +2,8 @@ baseurl: /
 url: https://coins-naz.github.io/coins-design-system/
 
 
+title: COINS Design System
 author: Coins Construction Cloud
-title: Coins Construction Cloud – Design System
 description: Coins Construction Cloud - Design System
 
 cssLink: https://raw.githubusercontent.com/COINS-Naz/coins-design-system/main/css/app.css

@@ -4,36 +4,17 @@
   </div>
   <section class="sidebar-section no-border">
     <ul class="sidebar-menu-items">
-      <li>
-        <a href="#">
-          Section 1
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          Section 2
-        </a>
-      </li>
-      <li>
-        <a class="active" href="#">
-          Buttons
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          Section 4
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          Section 5
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          Section 6
-        </a>
-      </li>
+      {% for post in site.posts %}
+        {% if page.url == post.url %}
+          <li>
+            <a class="active" href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% else %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
     </ul>
   </section>
 </aside>

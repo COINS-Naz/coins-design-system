@@ -4,6 +4,7 @@
   background-color: $color-white;
   position: relative;
   input, select, textarea {
+    font-family: "Lato", sans-serif;
     @include text-caption;
     border: none;
     border-radius: 4px;
