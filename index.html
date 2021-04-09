@@ -8,7 +8,7 @@ description: Olena please provide text :)
   {% for category in site.categories %}
     {% unless no_show_cat contains category[0] %}
       {% for post in category[1] limit:1 %}
-        <a class="doc-card  {{ category[0] | replace: ' ', '-' | downcase }}" href="{{ site.baseurl }}/{{ post.url }}">
+        <a class="doc-card  {{ category[0] | replace: ' ', '-' | downcase }}" href="{{ site.baseurl }}{{ post.url }}">
           <div class="doc-card-image"></div>
           <div class="doc-card-title">
             {{ category[0] }}
@@ -23,7 +23,7 @@ description: Olena please provide text :)
   <h4 class="news-title">Latest Updates</h4>
   <div class="news-latest">
     {% for post in site.categories['News'] limit:3 %}
-      <a class="news-post" href="{{ site.baseurl }}/{{ post.url }}">
+      <a class="news-post" href="{{ site.baseurl }}{{ post.url }}">
         <span class="news-post-indicator {{post.colorcoding}}"></span>
         <span class="news-post-date">{{ post.date | date: "%b %d, %Y" }}</span>
         <span class="news-post-title">{{ post.title }}</span>
