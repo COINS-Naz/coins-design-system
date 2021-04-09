@@ -8,8 +8,8 @@ description: Olena please provide text :)
   {% for category in site.categories %}
     {% unless no_show_cat contains category[0] %}
       {% for post in category[1] limit:1 %}
-        <a class="doc-card" href="{{ site.baseurl }}/{{ post.url }}">
-          <div class="doc-card-image {{ category[0] | replace: ' ', '-' | downcase }}"></div>
+        <a class="doc-card  {{ category[0] | replace: ' ', '-' | downcase }}" href="{{ site.baseurl }}/{{ post.url }}">
+          <div class="doc-card-image"></div>
           <div class="doc-card-title">
             {{ category[0] }}
           </div>
