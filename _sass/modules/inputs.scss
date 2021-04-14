@@ -218,3 +218,11 @@
     color: $color-black-7;
   }
 }
+
+.input.with-label {
+  margin-top: 18px;
+  & > .label {
+    position: absolute;
+    top: -18px;
+  }
+}

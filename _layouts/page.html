@@ -23,6 +23,7 @@
   <script>
     $(document).ready(function(){
       // code highlight
+      hljs.configure({languages: ['HTML']});
       hljs.highlightAll();
 
       // Copy
@@ -61,12 +62,13 @@
     // codeUpdate();
     function codeUpdate(codeEl, output) {
       codeEl.text(output);
-      hljs.highlightAll();
+      hljs.highlightAll('HTML');
     }
 
     // componentUpdate();
     function componentUpdate(previewEl, codeEl, classToggle, prepend, classRemove, childReplace) {
-      var el = previewEl.children().first();
+      var el = previewEl.children().first()
+          child = el.children().last();
       // Actions
       if (classToggle) {
         el.toggleClass(classToggle);
@@ -75,7 +77,7 @@
         el.removeClass(classRemove);
       }
       if (childReplace) {
-        el.html(childReplace);
+        child.replaceWith(childReplace);
       }
       if (prepend) {
         if (el.prop('outerHTML').indexOf(prepend) >= 0) {

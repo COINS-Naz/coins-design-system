@@ -28,7 +28,11 @@ permalink: /components/inputs/
           <input type="radio" name="type"
                  data-class-toggle='select'
                  data-class-remove='date search textarea'
-                 data-child-replace='<select><option>Option1</option><option>Option2</option><option>Option3</option></select>'>
+                 data-child-replace='<select>
+    <option>Option 1</option>
+    <option>Option 2</option>
+    <option>Option 3</option>
+  </select>'>
           <span>Select</span>
         </label>
       </div>
@@ -57,6 +61,19 @@ permalink: /components/inputs/
                  data-class-remove='select date search'
                  data-child-replace='<textarea rows="3" placeholder="Write your notes here..."></textarea>'>
           <span>Textarea</span>
+        </label>
+      </div>
+    </div>
+    <!-- Label -->
+    <div class="with-label">
+      <label class="label">Label</label>
+      <div>
+        <label class="checkbox">
+          <input type="checkbox"
+                 data-class-toggle="with-label"
+                 data-prepend='
+  <label for="field" class="label">Field label</label>'>
+          <span>Include label</span>
         </label>
       </div>
     </div>
