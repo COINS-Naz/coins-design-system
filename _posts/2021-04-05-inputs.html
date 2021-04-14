@@ -8,84 +8,81 @@ permalink: /components/inputs/
 
 <p class="page-information">A basic widget for getting the user input is a text field. Keyboard and mouse can be used for providing or changing data.</p>
 
-<h5>Text Input</h5>
-{% capture text %}
-<!-- Text Input -->
+
+<div class="component-builder">
+  <!-- Config -->
+  <div class="component-builder-config">
+    <!-- Type -->
+    <div class="with-label">
+      <label class="label">Type</label>
+      <div>
+        <label class="radio">
+          <input type="radio" name="type" checked
+                 data-class-remove='select date search textarea'
+                 data-child-replace='<input type="text" placeholder="Some text goes here...">'>
+          <span>Text</span>
+        </label>
+      </div>
+      <div>
+        <label class="radio">
+          <input type="radio" name="type"
+                 data-class-toggle='select'
+                 data-class-remove='date search textarea'
+                 data-child-replace='<select><option>Option1</option><option>Option2</option><option>Option3</option></select>'>
+          <span>Select</span>
+        </label>
+      </div>
+      <div>
+        <label class="radio">
+          <input type="radio" name="type"
+                 data-class-toggle='search'
+                 data-class-remove='select date textarea'
+                 data-child-replace='<input type="text" placeholder="Some text goes here...">'>
+          <span>Search</span>
+        </label>
+      </div>
+      <div>
+        <label class="radio">
+          <input type="radio" name="type"
+                 data-class-toggle='date'
+                 data-class-remove='select search textarea'
+                 data-child-replace='<input type="text" placeholder="Some text goes here...">'>
+          <span>Date</span>
+        </label>
+      </div>
+      <div>
+        <label class="radio">
+          <input type="radio" name="type"
+                 data-class-toggle='textarea'
+                 data-class-remove='select date search'
+                 data-child-replace='<textarea rows="3" placeholder="Write your notes here..."></textarea>'>
+          <span>Textarea</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!-- Preview -->
+  <div class="component-builder-preview">
+{% capture input %}
 <div class="input">
   <input type="text" placeholder="Some text goes here...">
 </div>
 {% endcapture %}
-{% include snippet.html code=text %}
-
-
-
-<h5>Adding labels</h5>
-{% capture label %}
-<!-- Labeled field -->
-<div class="with-label">
-  <label for="field" class="label">First name</label>
-  <div class="input">
-    <input type="text" id="field" placeholder="Something goes here...">
+{% include snippet.html code=input %}
   </div>
+  <!-- End Preview -->
 </div>
 
-{% endcapture %}
-{% include snippet.html code=label %}
-
-<h5>Textarea</h5>
-{% capture textarea %}
-<!-- Textarea -->
-<div class="input textarea">
-  <textarea rows="3" cols="50" placeholder="Write your notes here..."></textarea>
-</div>
-{% endcapture %}
-{% include snippet.html code=textarea %}
-
-<h5>Select</h5>
-{% capture select %}
-<!-- Select -->
-<div class="input select">
-  <select>
-    <option value="1">Option 1</option>
-    <option value="2">Option 2</option>
-    <option value="3">Option 3</option>
-    <option value="4">Option 4</option>
-  </select>
-</div>
-{% endcapture %}
-{% include snippet.html code=select %}
-
-
-<h5>Search</h5>
-{% capture search %}
-<!-- Search field -->
-<div class="input search">
-  <input type="text" placeholder="Search for something...">
-</div>
-{% endcapture %}
-{% include snippet.html code=search %}
-
-
-<h5>Date</h5>
-{% capture date %}
-<!-- Date field -->
-<div class="input date">
-  <input type="text" placeholder="dd/mm/yyyy">
-</div>
-{% endcapture %}
-{% include snippet.html code=date %}
 
 
 
 
-<h5>Checkbox</h5>
-{% capture checkbox %}
-<!-- Checkbox -->
-<label class="checkbox">
-  <input type="checkbox">
-  <span>Check me</span>
-</label>
-{% endcapture %}
-{% include snippet.html code=checkbox %}
+
+
+
+
+
+
+
 
 

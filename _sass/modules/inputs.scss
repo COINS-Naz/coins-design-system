@@ -82,8 +82,8 @@
   }
 }
 
-
-.checkbox {
+// Checkbox, radio
+.checkbox, .radio {
   cursor: pointer;
   user-select: none;
   @include text-body-1;
@@ -108,8 +108,16 @@
       color: $color-white;
     }
   }
-  input[type="checkbox"] {
+  input[type="radio"] + span {
+    &:before {
+      border-radius: 100%;
+    }
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
     display: none;
+  }
+  input[type="checkbox"] {
     &:checked + span:before {
       content: $icn-Check;
       font-family: $icoins-font-family;
@@ -118,6 +126,22 @@
       .thead & {
         border-color: $color-white-50;
       }
+    }
+  }
+  input[type="radio"] {
+    &:checked + span:before {
+      content: '';
+      border-color: $color-black;
+    }
+    &:checked + span:after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      background-color: $color-black;
     }
   }
   &.no-label {

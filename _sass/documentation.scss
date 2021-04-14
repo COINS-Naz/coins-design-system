@@ -208,6 +208,15 @@
 
 
 // Snippets
+.component-builder {
+  display: flex;
+}
+.component-builder-config {
+  width: 200px;
+  border-right: 1px solid $color-separator;
+  padding-right: 32px;
+  margin-right: 32px;
+}
 
 .snippet-block {
   border: 1px solid $color-separator;
@@ -243,6 +252,8 @@
       white-space: pre;
       font-size: 14px;
       margin: -32px 0;
+      max-width: 600px;
+      overflow-x: auto;
     }
   }
 }
