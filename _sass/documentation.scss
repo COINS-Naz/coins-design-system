@@ -275,6 +275,11 @@
       color: $color-black-7;
       @include text-caption;
       margin: 8px 0 12px;
+      .icn {
+        font-size: 24px;
+        line-height: 16px;
+        vertical-align: bottom;
+      }
     }
   }
   .do {
