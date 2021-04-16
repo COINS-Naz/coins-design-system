@@ -284,13 +284,13 @@
   }
   .do {
     border-color: $color-green;
-    p {
+    .icn {
       color: $color-green;
     }
   }
   .dont {
     border-color: $color-red;
-    p {
+    .icn {
       color: $color-red;
     }
   }
