@@ -279,9 +279,15 @@
   }
   .do {
     border-color: $color-green;
+    p {
+      color: $color-green;
+    }
   }
   .dont {
     border-color: $color-red;
+    p {
+      color: $color-red;
+    }
   }
 }
 
