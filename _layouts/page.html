@@ -6,9 +6,10 @@
   {% include nav.html %}
   <main class="main-area">
     {% include sidebar.html %}
-    <div class="content bg-grey">
-      <div class="child-page-title">
+    <div class="content">
+      <div class="child-page-hero">
         <h1>{{page.title}}</h1>
+        <p>{{page.subtitle}}</p>
       </div>
       {{ content }}
     </div>
@@ -20,78 +21,8 @@
   <!-- highlight -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/github.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      // code highlight
-      hljs.configure({languages: ['HTML']});
-      hljs.highlightAll();
-
-      // Copy
-      function copyToClipboard(el) {
-        var text = el.siblings('pre').find('code').text();
-        var input = document.createElement('textarea');
-        input.innerHTML = text;
-        document.body.appendChild(input);
-        input.select();
-        var result = document.execCommand('copy');
-        document.body.removeChild(input);
-        return result;
-      }
-
-      $('[data-copy-snippet').click(function(e) {
-        copyToClipboard($(this));
-      });
-    });
-    
-
-    // UI Component Construction
-    // Add event listener
-    $('.component-builder-config input').on('change', function() {
-      var classToggle = $(this).attr('data-class-toggle'),
-          prepend = $(this).attr('data-prepend'),
-          classRemove = $(this).attr('data-class-remove'),
-          childReplace = $(this).attr('data-child-replace'),
-
-          parent = $(this).parents('.component-builder'),
-          previewEl = $(parent).find('.preview'),
-          codeEl = $(parent).find('code');
-
-      componentUpdate(previewEl, codeEl, classToggle, prepend, classRemove, childReplace);
-    });
-
-    // codeUpdate();
-    function codeUpdate(codeEl, output) {
-      codeEl.text(output);
-      hljs.highlightAll('HTML');
-    }
-
-    // componentUpdate();
-    function componentUpdate(previewEl, codeEl, classToggle, prepend, classRemove, childReplace) {
-      var el = previewEl.children().first()
-          child = el.children().last();
-      // Actions
-      if (classToggle) {
-        el.toggleClass(classToggle);
-      }
-      if (classRemove) {
-        el.removeClass(classRemove);
-      }
-      if (childReplace) {
-        child.replaceWith(childReplace);
-      }
-      if (prepend) {
-        if (el.prop('outerHTML').indexOf(prepend) >= 0) {
-          var replace = el.prop('outerHTML').replace(prepend, '');;
-          el.replaceWith(replace);
-        } else {
-          el.prepend(prepend);
-        }
-      }
-      
-      // Code update
-      codeUpdate(codeEl, previewEl.prop('innerHTML'));
-    }
-  </script>
+  <!-- Documentation.js -->
+  <script src="{{ site.baseurl }}/js/documentation.js"></script>
 </body>
 
 </html>

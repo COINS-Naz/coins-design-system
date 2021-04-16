@@ -190,7 +190,103 @@
   .sidebar+.content {
     margin-left: 260px;
   }
+
+  .child-page-hero {
+    margin: -20px -32px 32px;
+    padding: 48px 32px 60px;
+    background: $color-light-grey;
+    border-bottom: 1px solid $color-separator;
+    h1 {
+      @include text-headline;
+      margin-bottom: 12px;
+    }
+    p {
+      color: $color-black-7;
+      max-width: 600px;
+    }
+
+    & + .tabs {
+      margin-top: -61px;
+    }
+  }
+
+  &-section {
+    margin-bottom: 48px;
+    .subsection {
+      margin-bottom: 40px;
+    }
+    h2, h3, h4, h5, p {
+      max-width: 600px;
+    }
+    h2 {
+      @include text-subheading;
+      margin-bottom: 8px;
+    }
+    h3 {
+      @include text-body-1-bold;
+      margin-bottom: 8px;
+    }
+    p {
+      @include text-body-1;
+      & + h3 {
+        margin-top: 16px;
+      }
+    }
+    a {
+      text-decoration: underline;
+    }
+    img {
+      display: block;
+      max-width: 800px;
+      border: 1px solid $color-separator;
+      border-radius: 4px;
+      margin: 16px 0 32px;
+    }
+    .coins-table {
+      max-width: 800px;
+      .thead th {
+        position: static;
+      }
+      .table-row .cell {
+        font-weight: 400;
+      }
+    }
+  }
 }
+.guideline {
+  display: flex;
+  max-width: 800px;
+  .do + .dont {
+    margin-left: 16px;
+  }
+  .do, .dont {
+    border-top: 4px solid;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    img {
+      max-width: 100%;
+      margin: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-top: none;
+    }
+    p {
+      text-align: center;
+      color: $color-black-7;
+      @include text-caption;
+      margin: 8px 0 12px;
+    }
+  }
+  .do {
+    border-color: $color-green;
+  }
+  .dont {
+    border-color: $color-red;
+  }
+}
+
+
+
 
 .inner {
   max-width: 50vw;
@@ -210,25 +306,31 @@
 // Snippets
 .component-builder {
   display: flex;
+  background: $color-white;
+  border-radius: 4px;
+  border: 1px solid $color-separator;
+  max-width: 1000px;
+  margin: 16px 0 32px;
 }
 .component-builder-config {
-  width: 200px;
-  border-right: 1px solid $color-separator;
-  padding-right: 32px;
-  margin-right: 32px;
+  flex-basis: 240px;
+  padding: 16px 32px 32px;
 }
 
 .snippet-block {
-  border: 1px solid $color-separator;
-  border-radius: 4px;
-  margin-top: 12px;
-  margin-bottom: 32px;
   overflow: hidden;
-  width: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  border-left: 1px solid $color-separator;
   .preview {
-    padding: 12px 32px;
+    padding: 32px;
     border-bottom: 1px solid $color-separator;
     background-color: $color-white;
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .snippet {
@@ -252,7 +354,6 @@
       white-space: pre;
       font-size: 14px;
       margin: -32px 0;
-      max-width: 600px;
       overflow-x: auto;
     }
   }
