@@ -29,6 +29,14 @@ permalink: /components/buttons/
   <section class="documentation-section">
     <h2>Live Preview</h2>
     <div class="component-builder">
+      
+      <!-- Preview -->
+  {% capture button %}
+  <button class="button" type="button">Click me</button>
+  {% endcapture %}
+  {% include snippet.html code=button %}
+      <!-- End Preview -->
+
       <!-- Config -->
       <div class="component-builder-config">
         <!-- Type -->
@@ -89,12 +97,6 @@ permalink: /components/buttons/
           </div>
         </div>
       </div>
-      <!-- Preview -->
-  {% capture button %}
-  <button class="button" type="button">Click me</button>
-  {% endcapture %}
-  {% include snippet.html code=button %}
-      <!-- End Preview -->
     </div>
   </section>
 

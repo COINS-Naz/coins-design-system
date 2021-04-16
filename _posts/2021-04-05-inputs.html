@@ -12,6 +12,16 @@ permalink: /components/inputs/
 <!-- Preview -->
 <h4>Preview</h4>
 <div class="component-builder">
+
+  <!-- Preview -->
+{% capture input %}
+<div class="input">
+  <input type="text" placeholder="Some text goes here...">
+</div>
+{% endcapture %}
+{% include snippet.html code=input %}
+  <!-- End Preview -->
+
   <!-- Config -->
   <div class="component-builder-config">
     <!-- Type -->
@@ -80,14 +90,6 @@ permalink: /components/inputs/
       </div>
     </div>
   </div>
-  <!-- Preview -->
-{% capture input %}
-<div class="input">
-  <input type="text" placeholder="Some text goes here...">
-</div>
-{% endcapture %}
-{% include snippet.html code=input %}
-  <!-- End Preview -->
 </div>
 
 
