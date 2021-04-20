@@ -268,7 +268,7 @@
 .guideline {
   display: flex;
   max-width: 800px;
-  margin-top: 16px;
+  margin: 16px 0 32px;
   .do + .dont {
     margin-left: 16px;
   }
@@ -279,6 +279,7 @@
     img {
       max-width: 100%;
       margin: 0;
+      border: 1px solid $color-separator;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       border-top: none;
@@ -343,7 +344,15 @@
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  border-right: 1px solid $color-separator;
+  border: 1px solid $color-separator;
+  border-radius: 4px;
+  margin: 16px 0;
+  .component-builder & {
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    border-right: 1px solid $color-separator;
+  }
   .preview {
     padding: 32px;
     border-bottom: 1px solid $color-separator;
@@ -374,8 +383,68 @@
       padding: 0 40px 4px 16px;
       white-space: pre;
       font-size: 14px;
-      margin: -32px 0;
       overflow-x: auto;
+      margin: -32px 0;
+    }
+  }
+}
+
+
+// Testing Jekyll
+.jekyll-content {
+  max-width: 800px;
+  h2, h3, h4, h5, p {
+    max-width: 600px;
+    margin-bottom: 16px;
+  }
+  h2 {
+    @include text-subheading;
+    margin-bottom: 8px;
+    margin-top: 48px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  h3 {
+    @include text-body-1-bold;
+    margin-bottom: 8px;
+  }
+  p {
+    @include text-body-1;
+    color: $color-black-7;
+  }
+  a {
+    text-decoration: underline;
+  }
+  img {
+    display: block;
+    max-width: 800px;
+    border: 1px solid $color-separator;
+    border-radius: 4px;
+    margin: 16px 0 32px;
+  }
+  .snippet-block {
+    margin-bottom: 32px;
+    margin-top: 0;
+  }
+  .doc-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 32px;
+    th, td {
+      font-size: 12px;
+      line-height: 16px;
+      color: $color-black;
+      text-align: left;
+      padding: 12px;
+    }
+    th {
+      font-weight: 400;
+      background-color: $color-input;
+    }
+    td {
+      vertical-align: top;
+      border-bottom: 1px solid $color-separator;
     }
   }
 }
