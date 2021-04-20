@@ -3,7 +3,7 @@
   <a href="{{ site.baseurl }}/" class="back-button">{{filterCategory.first}}</a>
 
   {% for tag in site.tags %}
-    {% assign postsInCategory = "" | split: "/" %}
+    {% assign postsInCategory = "" | split: "/" | sort: 'title' %}
     {% for post in tag[1] %}
       {% if post.categories contains filterCategory.first %add it to postsInCategory array{% endcomment %}
         {% assign postsInCategory = postsInCategory | push: post %}

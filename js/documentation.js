@@ -28,12 +28,12 @@ $('.component-builder-config input').on('change', function() {
       prepend = $(this).attr('data-prepend'),
       classRemove = $(this).attr('data-class-remove'),
       childReplace = $(this).attr('data-child-replace'),
+      fullReplace = $(this).attr('data-full-replace'),
 
       parent = $(this).parents('.component-builder'),
       previewEl = $(parent).find('.preview'),
       codeEl = $(parent).find('code');
-
-  componentUpdate(previewEl, codeEl, classToggle, prepend, classRemove, childReplace);
+  componentUpdate(previewEl, codeEl, classToggle, prepend, classRemove, childReplace, fullReplace);
 });
 
 // codeUpdate();
@@ -43,7 +43,7 @@ function codeUpdate(codeEl, output) {
 }
 
 // componentUpdate();
-function componentUpdate(previewEl, codeEl, classToggle, prepend, classRemove, childReplace) {
+function componentUpdate(previewEl, codeEl, classToggle, prepend, classRemove, childReplace, fullReplace) {
   var el = previewEl.children().first()
       child = el.children().last();
   // Actions
@@ -65,6 +65,10 @@ function componentUpdate(previewEl, codeEl, classToggle, prepend, classRemove, c
     }
   }
   
+  if (fullReplace) {
+    previewEl.html(fullReplace);
+  }
+
   // Code update
   codeUpdate(codeEl, previewEl.prop('innerHTML'));
 }

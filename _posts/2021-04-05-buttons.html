@@ -31,10 +31,10 @@ permalink: /components/buttons/
     <div class="component-builder">
       
       <!-- Preview -->
-  {% capture button %}
-  <button class="button" type="button">Click me</button>
-  {% endcapture %}
-  {% include snippet.html code=button %}
+{% capture button %}
+<button class="button" type="button">Click me</button>
+{% endcapture %}
+{% include snippet.html code=button %}
       <!-- End Preview -->
 
       <!-- Config -->
@@ -117,73 +117,81 @@ permalink: /components/buttons/
     </div>
   </section>
 
-  <!-- Variants -->
+  <!-- Type -->
   <section class="documentation-section">
-    <h2>Variants</h2>
-    <div class="subsection">
-      <h3>Type</h3>
-      <p>Each button variant has a particular function and its design signals that function to the user. It is therefore very important that the different variants are implemented consistently across products, so that they message the correct actions.</p>
-      <img src="{{ site.baseurl }}/img/btn-variants.jpg" alt="Coins Construction Cloud - Button variants">
-      <table class="coins-table">
-        <thead class="thead">
-          <tr class="table-row">
-            <th class="cell">Name</th>
-            <th class="cell">Class</th>
-            <th class="cell">Use case</th>
-          </tr>
-        </thead>
-        <tbody class="tbody">
-          <tr class="table-row">
-            <td class="cell">Primary</td>
-            <td class="cell"><span class="snip">primary</span></td>
-            <td class="cell">For the principal call to action on the page. Primary buttons should only appear once per screen (not including the application header, modal dialog, or side panel).</td>
-          </tr>
-          <tr class="table-row">
-            <td class="cell">Default</td>
-            <td class="cell">–</td>
-            <td class="cell">For secondary actions on each page. If paired with a primary button, the default button’s function is to perform the negative action of the set, such as “Cancel” or “Back”.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="subsection">
-      <h3>Size</h3>
-      <p>Buttons are named according to their size and usage in the Figma UI kit and in the code. The table below adds more context around the use case for each size.</p>
-      <img src="{{ site.baseurl }}/img/btn-size.jpg" alt="Coins Construction Cloud - Button size">
-      <table class="coins-table">
-        <thead class="thead">
-          <tr class="table-row">
-            <th class="cell">Name</th>
-            <th class="cell">Height</th>
-            <th class="cell">Class</th>
-            <th class="cell">Use case</th>
-          </tr>
-        </thead>
-        <tbody class="tbody">
-          <tr class="table-row">
-            <td class="cell">Small</td>
-            <td class="cell">28px</td>
-            <td class="cell"><span class="snip">small</span></td>
-            <td class="cell">Use as section inner page contextual action or when there is not enough vertical space for the default button. </td>
-          </tr>
-          <tr class="table-row">
-            <td class="cell">Default</td>
-            <td class="cell">42px</td>
-            <td class="cell">–</td>
-            <td class="cell">Use as primary page actions and other standalone actions.</td>
-          </tr>
-          <tr class="table-row">
-            <td class="cell">Large</td>
-            <td class="cell">50px</td>
-            <td class="cell"><span class="snip">large</span></td>
-            <td class="cell">Use as top level navigation section action.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <h2>Type</h2>
+    <p>Each button variant has a particular function and its design signals that function to the user. It is therefore very important that the different variants are implemented consistently across products, so that they message the correct actions.</p>
+    <img src="{{ site.baseurl }}/img/btn-variants.jpg" alt="Coins Construction Cloud - Button variants">
+    <table class="coins-table documentation">
+      <thead class="thead">
+        <tr class="table-row">
+          <th class="cell">Name</th>
+          <th class="cell">Class</th>
+          <th class="cell">Use case</th>
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        <tr class="table-row">
+          <td class="cell">Primary</td>
+          <td class="cell"><span class="snip">primary</span></td>
+          <td class="cell">For the principal call to action on the page. Primary buttons should only appear once per screen (not including the application header, modal dialog, or side panel).</td>
+        </tr>
+        <tr class="table-row">
+          <td class="cell">Default</td>
+          <td class="cell">–</td>
+          <td class="cell">For secondary actions on each page. If paired with a primary button, the default button’s function is to perform the negative action of the set, such as “Cancel” or “Back”.</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Adding an icon</h3>
+    <p>You can add an icon to a button by adding a <span class="snip">icon</span> class to the button and including an icon inside.</p>
+    <table class="coins-table documentation">
+      <tbody class="tbody">
+        <tr class="table-row">
+          <td class="cell">Icon</td>
+          <td class="cell"><span class="snip">icon</span></td>
+          <td class="cell">Include an icon by adding <span class="snip">&lt;i class=&quot;icn icn-SomeIconClass&quot;&gt;&lt;/i&gt;</span> before the button label inside.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Choose an icon from the <a href="#">COINS Icon Set</a>.</p>
+  </section>
+
+  <!-- Size -->
+  <section class="documentation-section">
+    <h2>Size</h2>
+    <p>Buttons are named according to their size and usage in the Figma UI kit and in the code. The table below adds more context around the use case for each size.</p>
+    <img src="{{ site.baseurl }}/img/btn-size.jpg" alt="Coins Construction Cloud - Button size">
+    <table class="coins-table documentation">
+      <thead class="thead">
+        <tr class="table-row">
+          <th class="cell">Name</th>
+          <th class="cell">Height</th>
+          <th class="cell">Class</th>
+          <th class="cell">Use case</th>
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        <tr class="table-row">
+          <td class="cell">Small</td>
+          <td class="cell">28px</td>
+          <td class="cell"><span class="snip">small</span></td>
+          <td class="cell">Use as section inner page contextual action or when there is not enough vertical space for the default button. </td>
+        </tr>
+        <tr class="table-row">
+          <td class="cell">Default</td>
+          <td class="cell">42px</td>
+          <td class="cell">–</td>
+          <td class="cell">Use as primary page actions and other standalone actions.</td>
+        </tr>
+        <tr class="table-row">
+          <td class="cell">Large</td>
+          <td class="cell">50px</td>
+          <td class="cell"><span class="snip">large</span></td>
+          <td class="cell">Use as top level navigation section action.</td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 </div>
-
-
-
 

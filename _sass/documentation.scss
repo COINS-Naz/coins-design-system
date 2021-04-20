@@ -7,8 +7,10 @@
     color: $color-black;
   }
 }
+////////////////////////
+// Homepage
+////////////////////////
 
-// Home
 .doc-hero {
   height: 400px;
   padding: 80px 0;
@@ -162,7 +164,10 @@
   @include text-subheading;
 }
 
+////////////////////////////
 // Layout
+////////////////////////////
+
 .documentation {
   margin: 0;
   padding: 0;
@@ -228,7 +233,9 @@
     }
     p {
       @include text-body-1;
-      & + h3 {
+      color: $color-black-7;
+      & + h3,
+      & + table {
         margin-top: 16px;
       }
     }
@@ -242,10 +249,13 @@
       border-radius: 4px;
       margin: 16px 0 32px;
     }
-    .coins-table {
+    .coins-table.documentation {
       max-width: 800px;
+      margin-bottom: 32px;
       .thead th {
         position: static;
+        background-color: $color-input;
+        color: $color-black-7;
       }
       .table-row .cell {
         font-weight: 400;
@@ -253,6 +263,8 @@
     }
   }
 }
+
+// Do's / Dont's
 .guideline {
   display: flex;
   max-width: 800px;
@@ -299,15 +311,12 @@
 
 
 
-
-.inner {
-  max-width: 50vw;
-}
-
 .snip {
   background: $color-separator;
+  color: $color-black-7;
   border-radius: 2px;
   padding: 2px 4px;
+  white-space: nowrap;
   &+& {
     margin-left: 4px;
   }
