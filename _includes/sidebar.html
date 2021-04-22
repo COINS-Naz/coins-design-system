@@ -16,7 +16,8 @@
           <span>{{ tag[0] }}</span>
         </div>
         <ul class="sidebar-menu-items">
-          {% for post in postsInCategory | sort: 'title' %}
+          {% assign sortedPosts = postsInCategory | sort: 'title' %}
+          {% for post in sortedPosts %}
             {% if page.url == post.url %}
               <li>
                 <a class="active" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
