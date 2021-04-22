@@ -315,7 +315,7 @@
 .snip {
   background: $color-separator;
   color: $color-black-7;
-  border-radius: 2px;
+  border-radius: 4px;
   padding: 2px 4px;
   white-space: nowrap;
   &+& {
@@ -407,7 +407,6 @@
   }
   h3 {
     @include text-body-1-bold;
-    margin-bottom: 8px;
   }
   p {
     @include text-body-1;
@@ -422,6 +421,10 @@
     border: 1px solid $color-separator;
     border-radius: 4px;
     margin: 16px 0 32px;
+  }
+  hr {
+    border: none;
+    border-bottom: 1px solid $color-separator;
   }
   .snippet-block {
     margin-bottom: 32px;

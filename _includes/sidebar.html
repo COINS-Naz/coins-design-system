@@ -3,7 +3,7 @@
   <a href="{{ site.baseurl }}/" class="back-button">{{filterCategory.first}}</a>
 
   {% for tag in site.tags %}
-    {% assign postsInCategory = "" | split: "/" | sort: 'title' %}
+    {% assign postsInCategory = "" | split: "/"  %}
     {% for post in tag[1] %}
       {% if post.categories contains filterCategory.first %add it to postsInCategory array{% endcomment %}
         {% assign postsInCategory = postsInCategory | push: post %}
@@ -16,7 +16,7 @@
           <span>{{ tag[0] }}</span>
         </div>
         <ul class="sidebar-menu-items">
-          {% for post in postsInCategory reversed %}
+          {% for post in postsInCategory | sort: 'title' %}
             {% if page.url == post.url %}
               <li>
                 <a class="active" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
