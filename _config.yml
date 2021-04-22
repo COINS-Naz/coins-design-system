@@ -1,5 +1,5 @@
-url: https://coins-naz.github.io
-baseurl: /coins-design-system
+# url: https://coins-naz.github.io
+# baseurl: /coins-design-system
 
 title: COINS Design System
 author: Coins Construction Cloud
@@ -10,3 +10,6 @@ cssLink: https://raw.githubusercontent.com/COINS-Naz/coins-design-system/main/cs
 sass:
   sass_dir: _sass
   style: compressed
+
+plugins:
+  - jekyll-tabs

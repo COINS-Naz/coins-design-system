@@ -32,3 +32,43 @@
     }
   }
 }
+
+.tab-content {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
+
+.content-switch {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 16px;
+  li {
+    padding: 4px 8px;
+    background-color: $color-white;
+    color: $color-black-7;
+    cursor: pointer;
+    @include text-body-1-bold;
+    border-radius: 4px;
+    transition: background-color .3s ease-out, color .3s ease-out;
+    & + li {
+      margin-left: 12px;
+    }
+    &:hover {
+      background-color: $color-input;
+    }
+    &.active {
+      cursor: default;
+      background-color: $color-separator;
+      color: $color-black;
+    }
+  }
+  &-tab {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+}

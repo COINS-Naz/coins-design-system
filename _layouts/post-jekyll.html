@@ -11,6 +11,11 @@
         <h1>{{page.title}}</h1>
         <p>{{page.subtitle}}</p>
       </div>
+      <ul class="tabs">
+        <li class="active" data-tab="web">Web</li>
+        <li data-tab="ios">iOS</li>
+        <li data-tab="android">Android</li>
+      </ul>
       <div class="jekyll-content">
         {{ content }}
       </div>
@@ -24,6 +29,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/github.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
   <!-- Documentation.js -->
+  <script src="{{ site.baseurl }}/js/tabs.js"></script>
   <script src="{{ site.baseurl }}/js/documentation.js"></script>
 </body>
 
