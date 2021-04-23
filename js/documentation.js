@@ -50,7 +50,7 @@ $(document).ready(function(){
   function copyH2Link(el) {
     var link = $(el).parent('h2').attr('id');
     var input = document.createElement('textarea');
-    input.innerHTML = window.location.href + '#'+ link;
+    input.innerHTML = window.location.href.replace(location.hash,"") + '#'+ link;
     document.body.appendChild(input);
     input.select();
     var result = document.execCommand('copy');
