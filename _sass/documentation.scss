@@ -1,5 +1,9 @@
 @import "variables";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .nav-link {
   padding-left: 20px;
   color: $color-black;
@@ -409,6 +413,14 @@
       margin-left: 4px;
       font-size: 24px;
       vertical-align: bottom;
+    }
+    &:before {
+      display: block;
+      content: " ";
+      margin-top: -100px;
+      height: 100px;
+      visibility: hidden;
+      pointer-events: none;
     }
   }
   h3 {
