@@ -1,0 +1,49 @@
+[data-tooltip-top],
+[data-tooltip-left],
+[data-tooltip-bottom],
+[data-tooltip-right] {
+  position: relative;
+  &:before {
+    @include text-caption;
+    position: absolute;
+    background: $color-black;
+    padding: 4px 8px;
+    color: $color-white;
+    border-radius: 4px;
+    white-space: nowrap;
+    display: none;
+  }
+  &:hover {
+    &:before {
+      display: block;
+    }
+  }
+}
+
+[data-tooltip-top]:before {
+  content: attr(data-tooltip-top);
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+[data-tooltip-left]:before {
+  content: attr(data-tooltip-left);
+  right: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+[data-tooltip-bottom]:before {
+  content: attr(data-tooltip-bottom);
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+[data-tooltip-right]:before {
+  content: attr(data-tooltip-right);
+  left: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%)
+}

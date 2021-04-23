@@ -404,6 +404,12 @@
     &:first-child {
       margin-top: 0;
     }
+    a:link {
+      text-decoration: none;
+      margin-left: 4px;
+      font-size: 24px;
+      vertical-align: bottom;
+    }
   }
   h3 {
     @include text-body-1-bold;
