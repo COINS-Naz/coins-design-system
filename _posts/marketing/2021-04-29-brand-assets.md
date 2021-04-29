@@ -7,8 +7,6 @@ subtitle: "This page gives access to COINS brand assets including the COINS logo
 permalink: /content/brand-assets/
 ---
 
-Please direct any questions about COINS branding and these assets to [design@coins-global.com](mailto:design@coins-global.com){:target="_blank"}
-
 | Date added    | Description / Link                                                                                                       | Type        |
 |---------------|--------------------------------------------------------------------------------------------------------------------------|-------------|
 | 31st Mar 2021 | [Product Icons 2021](https://www.dropbox.com/sh/3gmxjb3nvrvoz73/AABB88HDjozojwnR0qH27TQaa?dl=0){:target="_blank"}        | PNG and SVG |
@@ -26,3 +24,5 @@ Please direct any questions about COINS branding and these assets to [design@coi
 | 15th May 2017 | [Square logo in EPS format](https://www.dropbox.com/s/t343644ihcovba5/coins_logo_flat_square.eps?dl=0){:target="_blank"} | EPS         |
 | 15th May 2017 | [Square logo in SVG format](https://www.dropbox.com/s/df5l8ci83ukummr/coins_logo_flat_square.svg?dl=0){:target="_blank"} | SVG         |
 {: .doc-table}
+
+Please direct any questions about COINS branding and these assets to [design@coins-global.com](mailto:design@coins-global.com){:target="_blank"}
