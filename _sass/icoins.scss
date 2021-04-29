@@ -24,15 +24,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icn-Add-Package {
+.icn-Package-Add {
   &:before {
-    content: $icn-Add-Package;
+    content: $icn-Package-Add;
     color: #4a4a4a;
   }
 }
-.icn-Add-Worker {
+.icn-Worker-Add {
   &:before {
-    content: $icn-Add-Worker;
+    content: $icn-Worker-Add;
     color: #4a4a4a;
   }
 }
