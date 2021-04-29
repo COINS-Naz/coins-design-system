@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-no-tabs
 category: "Marketing"
 tag: "COINS Brand"
 title: Brand Assets
