@@ -437,6 +437,18 @@ html {
     border: none;
     border-bottom: 1px solid $color-separator;
   }
+  blockquote {
+    padding-left: 16px;
+    border-left: 4px solid $color-separator;
+    padding: 8px 16px;
+    background: $color-input;
+  }
+  ol, ul {
+    padding-left: 20px;
+  }
+  .content-switch {
+    padding: 0;
+  }
   .snippet-block {
     margin-bottom: 32px;
     margin-top: 0;
