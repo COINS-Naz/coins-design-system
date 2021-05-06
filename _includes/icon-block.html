@@ -6,6 +6,10 @@
     <pre>
       <code>{{ include.icon }}</code>
     </pre>
-    <button class="button small copy" data-tooltip-left="Copy icon name" data-copy-snippet><i class="icn icn-Complete"></i></button>
+
+    <div class="icon-buttons">
+      <button class="button small copy" data-tooltip-left="Copy icon name" data-copy-snippet><i class="icn icn-Complete"></i></button>
+      <a class="button small copy" href="{{ site.baseurl }}/assets/icons/{{include.icon | remove: 'icn-'}}.svg" download data-tooltip-left="Download as SVG"><i class="icn icn-Download"></i></a>
+    </div>
   </div>
 </div>

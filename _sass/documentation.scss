@@ -473,6 +473,28 @@ html {
       border-bottom: 1px solid $color-separator;
     }
   }
+  .download-link {
+    display: block;
+    padding: 32px;
+    border: 1px solid $color-separator;
+    border-radius: 4px;
+    text-decoration: none;
+    color: $color-black;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    background-color: $color-light-grey;
+    transition: background-color .3s ease-out;
+    &:hover {
+      background-color: $color-input;
+    }
+    .icn {
+      font-size: 24px;
+      vertical-align: middle;
+      margin-right: 12px;
+      color: $color-accent;
+    }
+  }
 }
 
 // Icons
@@ -481,7 +503,6 @@ html {
   grid-template-columns: repeat(5, 160px);
   .icon-block {
     position: relative;
-    overflow: hidden;
     border-right: 1px solid $color-separator;
     border-bottom: 1px solid $color-separator;
     &:first-child {
@@ -510,19 +531,27 @@ html {
           text-align: center;
         }
       }
+    }
+    .icon-buttons {
+      position: absolute;
+      width: 32px;
+      top: 8px;
+      right: 8px;
+      opacity: 0;
+      transition: opacity .3s ease-out;
       .copy {
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        padding: 3px 6px;
-        opacity: 0;
-        transition: opacity .3s ease-out;
+        padding: 4px 8px;
+        text-decoration: none;
+        & + .copy {
+          margin-left: 0;
+          margin-top: 4px;
+        }
       }
     }
     &:hover {
       outline: 1px solid $color-black;
       z-index: 2;
-      .copy {
+      .icon-buttons {
         opacity: 1;
       }
     }
