@@ -18,7 +18,7 @@ $(document).ready(function(){
   // Copy Code
   //////////////////////
   function copyCodeToClipboard(el) {
-    var text = el.siblings('pre').find('code').text();
+    var text = el.parents('.snippet').find('code').text();
     var input = document.createElement('textarea');
     input.innerHTML = text;
     document.body.appendChild(input);
