@@ -211,5 +211,25 @@ permalink: /cheatsheet/
 %}
       </td>
     </tr>
+    <tr>
+      <td>
+        <pre>
+{&#37; include do-dont.html 
+  do-img="buttons-do.jpg"
+  do-text="Use capital case for labeling buttons."
+  dont-img="buttons-dont.jpg"
+  dont-text="Do not use uppercase."
+%}
+        </pre>
+      </td>
+      <td>
+{% include do-dont.html 
+  do-img="buttons-do.jpg"
+  do-text="Use capital case for labeling buttons."
+  dont-img="buttons-dont.jpg"
+  dont-text="Do not use uppercase."
+%}
+      </td>
+    </tr>
   </tbody>
 </table>
