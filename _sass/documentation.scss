@@ -91,22 +91,22 @@ html {
     left: 0;
     border-radius: 0 4px 4px 0;
     &.web-components {
-      background-color: $color-AM;
+      background-color: #3db27f;
     }
     &.mobile-components {
-      background-color: $color-AM;
+      background-color: #539bf8;
     }
     &.global {
-      background-color: $color-OM;
+      background-color: #ef8e6d;
     }
     &.figma {
-      background-color: $color-CCC;
+      background-color: #ffbe3c;
     }
     &.documentation {
-      background-color: $color-PM;
+      background-color: #9478d4;
     }
     &.marketing {
-      background-color: $color-PM;
+      background-color: #5551fe;
     }
   }
 }
