@@ -2,7 +2,7 @@
 <html lang="en">
 {% include head.html %}
 
-<body class="documentation">
+<body class="design-system">
   {% include nav.html %}
   <main class="main-area">
     {% include sidebar.html %}
@@ -13,11 +13,8 @@
       </div>
       <div class="jekyll-content">
         {{ content }}
+        {% include edit-on-github.html %}
       </div>
-      <a href="https://www.github.com/{{ site.github_username }}/{{ site.git_repo }}/blob/design-system/{{ page.path }}" class="button icon" target="_blank">
-        <i class="icn icn-Edit"></i>
-        Edit on GitHub
-      </a>
     </div>
   </main>
 
@@ -28,6 +25,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/github.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
   <!-- Documentation.js -->
+  <script src="{{ site.baseurl }}/js/tabs.js"></script>
   <script src="{{ site.baseurl }}/js/documentation.js"></script>
 </body>
 
