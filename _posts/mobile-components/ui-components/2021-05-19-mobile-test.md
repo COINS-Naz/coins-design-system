@@ -12,7 +12,16 @@ permalink: /mobile-components/mobile-test/
 {% include tab.html tab="ios" %}
 
 ## IOS Tab content
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Memphis Milano is the way of the future. Memphis Milano is the way of the future.
+Memphis Milano is the way of the future.
+Memphis Milano is the way of the future.
+Memphis Milano is the way of the future.
+Memphis Milano is the way of the future.
+Memphis Milano is the way of the future.
+Memphis Milano is the way of the future.
+Memphis Milano is the way of the future.Memphis Milano is the way of the future.Memphis Milano is the way of the future.Memphis Milano is the way of the future.Memphis Milano is the way of the future.Memphis Milano is the way of the future.
+Memphis Milano is the way of the future.Memphis Milano is the way of the future.
+Memphis Milano is the way of the future.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 
 {% include end-tab.html %}
@@ -22,7 +31,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 {% include tab.html tab="android" %}
 
 ## Android Tab content
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Memphis Milano is the way of the future. Memphis Milano is the way of the future.
+Memphis Milano is the way of the future.
+Memphis Milano is the way of the future.
+Memphis Milano is the way of the future.
+Memphis Milano is the way of the future.
+Memphis Milano is the way of the future.
+Memphis Milano is the way of the future.
+Memphis Milano is the way of the future.Memphis Milano is the way of the future.Memphis Milano is the way of the future.Memphis Milano is the way of the future.Memphis Milano is the way of the future.Memphis Milano is the way of the future.
+Memphis Milano is the way of the future.Memphis Milano is the way of the future.
+Memphis Milano is the way of the future.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 
 {% include end-tab.html %}
