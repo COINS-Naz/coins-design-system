@@ -1,0 +1,13 @@
+<div class="snippet-block">
+  <div class="preview image">
+    <img src="{{ site.baseurl }}/img/{{include.image}}">
+  </div>
+  <div class="snippet">
+    <pre>
+      <code>
+        {{include.code | xml_escape}}
+      </code>
+    </pre>
+    <button class="button small copy" data-tooltip-left="Copy snippet" data-copy-snippet><i class="icn icn-Complete"></i></button>
+  </div>
+</div>

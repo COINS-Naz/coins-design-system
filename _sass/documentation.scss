@@ -380,6 +380,13 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    &.image {
+      img {
+        border: none;
+        max-width: 400px;
+        margin: 0;
+      }
+    }
   }
 
   .snippet {
@@ -598,3 +605,4 @@ html {
     fill: $color-black-active;
   }
 }
+

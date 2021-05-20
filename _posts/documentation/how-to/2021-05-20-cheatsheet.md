@@ -160,22 +160,6 @@ permalink: /documentation/cheatsheet/
     <tr>
       <td>
         <pre>
-{&#37; include snippet.html code='
-  &#60;button class="button" type="button">Default&#60; /button>
-' &#37;}
-        </pre>
-      </td>
-      <td>
-{% include snippet.html code='
-
-<button class="button" type="button">Default</button>
-
-' %}
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <pre>
 <!-- Content switch -->
 <!-- Content switch tab 1 -->
 {&#37; capture switch-content-1 %}
@@ -231,6 +215,40 @@ permalink: /documentation/cheatsheet/
   dont-img="buttons-dont.jpg"
   dont-text="Do not use uppercase."
 %}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <pre>
+{&#37; include snippet.html code='
+  &#60;some code>
+' &#37;}
+        </pre>
+      </td>
+      <td>
+{% include snippet.html code='
+
+<button class="button" type="button">Default</button>
+
+' %}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <pre>
+{&#37; include snippet-image.html
+  image='image-folder/some-image.jpg' 
+  code='
+    &#60;some code here> 
+' &#37;}
+        </pre>
+      </td>
+      <td>
+{% include snippet-image.html image='test-image.png' code='
+
+<some code here>
+
+' %}
       </td>
     </tr>
   </tbody>
