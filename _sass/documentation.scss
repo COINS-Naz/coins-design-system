@@ -587,3 +587,13 @@ html {
 .edit-on-github {
   margin-top: 80px;
 }
+
+.github-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  margin-top: -2px;
+  path {
+    fill: $color-black-active;
+  }
+}
