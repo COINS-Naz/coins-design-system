@@ -1,0 +1,44 @@
+.coins-alert {
+  padding: 8px 0 8px 32px;
+  position: relative;
+  @include text-caption;
+  &:before {
+    font-family: $icoins-font-family;
+    content: $icn-Info-Filled;
+    font-size: 24px;
+    line-height: 24px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+  }
+  // Types
+  &.error,
+  &.warning,
+  &.success {
+    padding: 8px 8px 8px 40px;
+    &:before {
+      left: 8px;
+    }
+  }
+  &.error {
+    background-color: rgba($color-red, .3);
+    &:before {
+      content: $icn-Important-Alt-Triangle-Filled;
+      color: $color-red;
+    }
+  }
+  &.warning {
+    background-color: rgba($color-yellow, .3);
+    &:before {
+      content: $icn-Important-Filled;
+      color: $color-yellow;
+    }
+  }
+  &.success {
+    background-color: rgba($color-green, .3);
+    &:before {
+      content: $icn-Check-Filled;
+      color: $color-green;
+    }
+  }
+}
