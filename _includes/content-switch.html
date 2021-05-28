@@ -1,53 +1,53 @@
 <div class="content-switch-module">
 <ul class="content-switch">
   {% if include.content-1 %}
-    <li data-content="{{include.for}}-{{include.content-1-label | downcase}}" class="active">{{include.content-1-label}}</li>
+    <li data-content="{{include.for}}-{{include.content-1-label | downcase | replace: ' ', '-'}}" class="active">{{include.content-1-label}}</li>
   {% endif %}
 
   {% if include.content-2 %}
-    <li data-content="{{include.for}}-{{include.content-2-label | downcase}}">{{include.content-2-label}}</li>
+    <li data-content="{{include.for}}-{{include.content-2-label | downcase | replace: ' ', '-'}}">{{include.content-2-label}}</li>
   {% endif %}
 
   {% if include.content-3 %}
-    <li data-content="{{include.for}}-{{include.content-3-label | downcase}}">{{include.content-3-label}}</li>
+    <li data-content="{{include.for}}-{{include.content-3-label | downcase | replace: ' ', '-'}}">{{include.content-3-label}}</li>
   {% endif %}
 
   {% if include.content-4 %}
-    <li data-content="{{include.for}}-{{include.content-4-label | downcase}}">{{include.content-4-label}}</li>
+    <li data-content="{{include.for}}-{{include.content-4-label | downcase | replace: ' ', '-'}}">{{include.content-4-label}}</li>
   {% endif %}
 
   {% if include.content-5 %}
-    <li data-content="{{include.for}}-{{include.content-5-label | downcase}}">{{include.content-5-label}}</li>
+    <li data-content="{{include.for}}-{{include.content-5-label | downcase | replace: ' ', '-'}}">{{include.content-5-label}}</li>
   {% endif %}
 </ul>
 
 <!-- Content -->
 {% if include.content-1 %}
-  <div class="content-switch-tab" id="{{include.for}}-{{include.content-1-label | downcase }}" markdown="1">
+  <div class="content-switch-tab" id="{{include.for}}-{{include.content-1-label | downcase | replace: ' ', '-' }}" markdown="1">
     {{ include.content-1 }}
   </div>
 {% endif %}
 
 {% if include.content-2 %}
-  <div class="content-switch-tab" id="{{include.for}}-{{include.content-2-label | downcase }}" markdown="1">
+  <div class="content-switch-tab" id="{{include.for}}-{{include.content-2-label | downcase | replace: ' ', '-' }}" markdown="1">
     {{ include.content-2 }}
   </div>
 {% endif %}
 
 {% if include.content-3 %}
-  <div class="content-switch-tab" id="{{include.for}}-{{include.content-3-label | downcase }}" markdown="1">
+  <div class="content-switch-tab" id="{{include.for}}-{{include.content-3-label | downcase | replace: ' ', '-' }}" markdown="1">
     {{ include.content-3 }}
   </div>
 {% endif %}
 
 {% if include.content-4 %}
-  <div class="content-switch-tab" id="{{include.for}}-{{include.content-4-label | downcase }}" markdown="1">
+  <div class="content-switch-tab" id="{{include.for}}-{{include.content-4-label | downcase | replace: ' ', '-' }}" markdown="1">
     {{ include.content-4 }}
   </div>
 {% endif %}
 
 {% if include.content-5 %}
-  <div class="content-switch-tab" id="{{include.for}}-{{include.content-5-label | downcase }}" markdown="1">
+  <div class="content-switch-tab" id="{{include.for}}-{{include.content-5-label | downcase | replace: ' ', '-' }}" markdown="1">
     {{ include.content-5 }}
   </div>
 {% endif %}
