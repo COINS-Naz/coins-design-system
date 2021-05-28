@@ -45,7 +45,7 @@ Keep notification messages specific and relevant. Try to use as minimum text as 
   dont-text="Do not use ALL CAPS and text with imprecise meaning."
 %}
 
-###Right type for right circumstances
+### Right type for right circumstances
 Use the right notification based on catogiries described above. Use types consistently and make no exceptions.
 
 {% include do-dont.html 
