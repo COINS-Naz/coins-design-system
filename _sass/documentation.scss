@@ -477,6 +477,8 @@ html {
   }
   ol, ul {
     padding-left: 20px;
+    @include text-body-1;
+    color: $color-black-7;
   }
   .content-switch {
     padding: 0;
