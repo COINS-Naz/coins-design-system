@@ -51,6 +51,81 @@ Use the right notification based on catogiries described above. Use types consis
 {% include do-dont.html 
   do-img="Guidelines_Notifications_Type_Do.png"
   do-text="Use short and relevant message."
-  dont-img="Guidelines_Notifications_Text_Do_Not.png"
-  dont-text="Do not use ALL CAPS and text with imprecise meaning."
+  dont-img="Guidelines_Notifications_Type_Do_Not.png"
+  dont-text="Do not mismatch type and context."
 %}
+
+
+## Type
+
+Each notification type has a particular function and its design signals that function to the user. It is therefore very important that the different variants are implemented consistently across products, so that they message the correct information.
+
+<!-- Content switch -->
+<!-- Content switch tab 1 -->
+{% capture type-alert %}
+{% include snippet.html code='
+<div class="coins-alert error">Lorem ipsum sit dolor amet</div>
+' %}
+{% endcapture %}
+
+<!-- Content switch tab 2 -->
+{% capture type-toast %}
+{% include snippet.html code='
+<div class="coins-alert error">Lorem ipsum sit dolor amet</div>
+' %}
+{% endcapture %}
+
+<!-- Content switch tab 3 -->
+{% capture type-information %}
+{% include snippet.html code='
+<div class="coins-alert">Lorem ipsum sit dolor amet</div>
+' %}
+{% endcapture %}
+
+<!-- Content switch tab 4 -->
+{% capture type-notice %}
+{% include snippet.html code='
+<div class="coins-alert error">Lorem ipsum sit dolor amet</div>
+' %}
+{% endcapture %}
+
+<!-- Render Content -->
+{% include content-switch.html for="type"
+           content-1-label="Alert" content-1=type-alert
+           content-2-label="Toast" content-2=type-toast
+           content-3-label="Information" content-3=type-information
+           content-4-label="Notice" content-4=type-notice
+%}
+<!-- End content switch -->
+
+### Alert subtypes
+
+<!-- Content switch -->
+<!-- Content switch tab 1 -->
+{% capture type-success %}
+{% include snippet.html code='
+<div class="coins-alert success">Lorem ipsum sit dolor amet</div>
+' %}
+{% endcapture %}
+
+<!-- Content switch tab 2 -->
+{% capture type-warning %}
+{% include snippet.html code='
+<div class="coins-alert warning">Lorem ipsum sit dolor amet</div>
+' %}
+{% endcapture %}
+
+<!-- Content switch tab 3 -->
+{% capture type-alert %}
+{% include snippet.html code='
+<div class="coins-alert error">Lorem ipsum sit dolor amet</div>
+' %}
+{% endcapture %}
+
+<!-- Render Content -->
+{% include content-switch.html for="type"
+           content-1-label="Alert Success" content-1=type-success
+           content-2-label="Alert Warning" content-2=type-warning
+           content-3-label="Alert Error" content-3=type-error
+%}
+<!-- End content switch -->
