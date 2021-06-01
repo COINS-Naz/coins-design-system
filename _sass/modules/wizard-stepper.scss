@@ -1,0 +1,51 @@
+.wizard-stepper {
+  padding: 0;
+  li {
+    padding: 16px 20px 16px 40px;
+    position: relative;
+    cursor: default;
+    list-style: none;
+    border-bottom: 1px solid $color-separator;
+    @include text-body-1;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 22px;
+      left: 20px;
+      width: 8px;
+      height: 8px;
+      border-radius: 4px;
+      background-color: $color-separator;
+    }
+    // Variants
+    &.current {
+      background-color: $color-input;
+    }
+    &.current:not(.complete):not(.error) {
+      &:before {
+        background-color: $color-yellow;
+      }
+    }
+    &.complete {
+      &:before {
+        background-color: $color-green;
+      }
+    }
+    &.error {
+      &:before {
+        background-color: $color-red;
+      }
+    }
+    &.complete,
+    &.error {
+      cursor: pointer;
+    }
+
+    &.finalize {
+      border-bottom: none;
+      &:before {
+        content: none;
+      }
+    }
+  }
+}
