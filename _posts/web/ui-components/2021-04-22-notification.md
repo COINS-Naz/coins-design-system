@@ -116,7 +116,7 @@ Each notification type has a particular function and its design signals that fun
 {% endcapture %}
 
 <!-- Content switch tab 3 -->
-{% capture type-alert %}
+{% capture type-error %}
 {% include snippet.html code='
 <div class="coins-alert error">Lorem ipsum sit dolor amet</div>
 ' %}
