@@ -1,6 +1,16 @@
----
-layout: default
----
-<div class="search">
-  {{ content }}
-</div>
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+
+<body class="design-system">
+  {% include nav.html %}
+  <main class="main-area">
+    <div class="content search-bg" style="background-image: url({{site.baseurl}}/img/core/SearchBg.svg)">
+      <div class="search">
+        {{ content }}
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

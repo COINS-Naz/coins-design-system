@@ -608,3 +608,63 @@ html {
   }
 }
 
+
+// Search
+
+.search-results {
+  width: 100%;
+  max-width: 800px;
+  margin: 60px auto 0;
+  list-style: none;
+}
+
+.search-result-item {
+  margin-top: 20px;
+  a {
+    display: block;
+    border-radius: 8px;
+    background-color: $color-white;
+    box-shadow: $shadow-card;
+    padding: 28px 40px;
+    transition: box-shadow .3s ease-out;
+    &:hover {
+      box-shadow: $shadow-dropdown;
+    }
+  }
+  // 
+  .search-result-title {
+    @include text-title;
+  }
+  .search-result-receipt {
+    @include text-body-1;
+    color: $color-black;
+    margin-top: 4px;
+  }
+  .search-result-category {
+    @include text-caption;
+    color: $color-black-7;
+    text-transform: uppercase;
+    margin-top: 16px;
+  }
+}
+
+
+
+.search-bg {
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.search-no-results {
+  text-align: center;
+  margin-top: 150px;
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+  p {
+    color: $color-black-7;
+    @include text-body-1;
+  }
+}

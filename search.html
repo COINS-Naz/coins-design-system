@@ -4,7 +4,7 @@ layout: search
 
 
 
-<ul id="search-results"></ul>
+<ul class="search-results" id="search-results"></ul>
 
 <script>
   window.store = {
@@ -23,21 +23,23 @@ layout: search
 <script src="{{ site.baseurl }}/js/lunr.min.js"></script>
 <script>
   (function() {
+
+  var searchTerm = getQueryVariable('query');
+  
   function displaySearchResults(results, store) {
     var searchResults = document.getElementById('search-results');
 
     if (results.length) { // Are there any results?
       var appendString = '';
-
+      appendString += '<li><h2>Results for &#34;'+ searchTerm + '&#34; ('+ results.length +')</h2></li>'
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
-        appendString += '<li><a href="' + '{{site.baseurl}}' + item.url + '"><h3>' + item.title + '</h3></a>';
-        appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
+        appendString += '<li class="search-result-item"><a href="' + '{{site.baseurl}}' + item.url + '"><div class="search-result-title">' + item.title + '</div><div class="search-result-receipt">' + item.content.substring(0, 150) + '...</div><div class="search-result-category">'+ item.category +'</div></a></li>';
       }
 
       searchResults.innerHTML = appendString;
     } else {
-      searchResults.innerHTML = '<li>No results found</li>';
+      searchResults.innerHTML = '<li><div class="search-no-results"><img src="{{site.baseurl}}/img/core/NoResults.svg" alt="Coins Construction Cloud - Design System - No Search results" width="200"><h2>No Results Found</h2><p>We couldn&#39;t find anything for <b>&#34;'+ searchTerm + '&#34;</b>. <br>Please try searching for something different.</p></div></li>';
     }
   }
 
@@ -54,7 +56,6 @@ layout: search
     }
   }
 
-  var searchTerm = getQueryVariable('query');
 
   if (searchTerm) {
     document.getElementById('search-box').setAttribute("value", searchTerm);
