@@ -36,10 +36,6 @@ permalink: /documentation/cheatsheet/
       <td><h3>Heading 3</h3></td>
     </tr>
     <tr>
-      <td>#### Heading 4</td>
-      <td><h4>Heading 4</h4></td>
-    </tr>
-    <tr>
       <td>Standard paragraph. Lorem ipsum sit dolor amet</td>
       <td>
         <p>Standard paragraph. Lorem ipsum sit dolor amet</p>
