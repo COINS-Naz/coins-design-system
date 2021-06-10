@@ -11,8 +11,10 @@ layout: search
     {% for post in site.posts %}
       "{{ post.url | slugify }}": {
         "title": "{{ post.title | xml_escape }}",
+        "subtitle": "{{ post.subtitle | xml_escape }}",
         "author": "{{ post.author | xml_escape }}",
         "category": "{{ post.category | xml_escape }}",
+        "tag": "{{ post.tag | xml_escape }}",
         "content": {{ post.content | strip_html | strip_newlines | jsonify }},
         "url": "{{ post.url | xml_escape }}"
       }
@@ -34,7 +36,7 @@ layout: search
       appendString += '<li><h2>Results for &#34;'+ searchTerm + '&#34; ('+ results.length +')</h2></li>'
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
-        appendString += '<li class="search-result-item"><a href="' + '{{site.baseurl}}' + item.url + '"><div class="search-result-title">' + item.title + '</div><div class="search-result-receipt">' + item.content.substring(0, 150) + '...</div><div class="search-result-category">'+ item.category +'</div></a></li>';
+        appendString += '<li class="search-result-item"><a href="' + '{{site.baseurl}}' + item.url + '"><div class="search-result-title">' + item.title + '</div><div class="search-result-receipt">' + item.subtitle.substring(0, 150) + '...</div><div class="search-result-category">'+ item.category + ' • ' + item.tag +'</div></a></li>';
       }
 
       searchResults.innerHTML = appendString;
