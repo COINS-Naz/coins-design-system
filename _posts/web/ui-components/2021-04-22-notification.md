@@ -15,12 +15,15 @@ Notifications draw the user’s attention to warnings or important information. 
 We use several types of notifications and classify them on three levels: high, medium, and low-attention depending on signal strength (which peripheral messages need more or less attention).
 
 **High-attention**
+
 Alerts - high short-term importance message such as feedback on success or failure of an action triggered by the user. We use them when we need providing a feedback based on the user interaction with certain element. They are directly attached to an individual element.
 
 **Medium-attention**
+
 Toasts - appear in the bottom center of a viewport (remains in the viewport during scrolling). They are especially suitable for time-sensitive live notifications. The user can discard them or they are automatically hidden after certain period of time. We use them to provide a feedback based on the user interaction. They usually refer not to certain element as alert, but to certain amount of changes or a group of actions. They also can be universally valid.
 
 **Low-attention**
+
 Information - is the static message which describes how to do the required action on a partial section of a page and is positioned below or above this partial section or container. We use them to show some details about upcoming steps the user may have to follow.
 
 Notices - are the system feedback such as warnings and messages the user must take note of, such as warnings about system changes. Notices appear in the lower corner of the right-hand viewport edge. The notice can be discarded by the user. We use them when notification that is pushed by the application.
