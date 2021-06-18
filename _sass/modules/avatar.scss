@@ -1,0 +1,52 @@
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  @include text-body-2-bold;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: $color-separator;
+  border: 2px solid $color-white;
+  box-shadow: 0px 2px 4px rgba(0,0,0,.2);
+  color: $color-black-7;
+
+  &.image {
+    text-indent: -9999px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &.icon {
+    .icn {
+      @include text-title;
+    }
+  }
+
+  &.large {
+    width: 200px;
+    height: 200px;
+    @include text-display-1;
+    line-height: 200px;
+    &.icon {
+      .icn {
+        @include text-display-4;
+      }
+    }
+  }
+
+  .top-nav & {
+    @include text-caption;
+    line-height: 30px;
+    font-weight: 400;
+    width: 32px;
+    height: 32px;
+    &.icon {
+      .icn {
+        @include text-body-2;
+      }
+    }
+  }
+}
