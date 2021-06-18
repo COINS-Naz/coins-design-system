@@ -217,7 +217,7 @@ permalink: /documentation/cheatsheet/
       <td>
         <pre>
 {&#37; include snippet.html code='
-  &#60;some code>
+some code
 ' &#37;}
         </pre>
       </td>
@@ -235,14 +235,14 @@ permalink: /documentation/cheatsheet/
 {&#37; include snippet-image.html
   image='image-folder/some-image.jpg' 
   code='
-    &#60;some code here> 
+some code here
 ' &#37;}
         </pre>
       </td>
       <td>
 {% include snippet-image.html image='test-image.png' code='
 
-<some code here>
+some code here
 
 ' %}
       </td>
