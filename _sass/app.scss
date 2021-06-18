@@ -49,3 +49,10 @@
   }
 }
 
+hr {
+  border: none;
+  border-bottom: $color-separator;
+  width: 100% ;
+  margin: 16px 0;
+}
+
