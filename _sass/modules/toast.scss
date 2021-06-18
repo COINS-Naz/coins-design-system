@@ -13,17 +13,25 @@
   border-radius: 4px;
   @include animation('toast-appear 1s ease-out');
 
-  .dismiss {
+  .undo, .dismiss {
     text-transform: uppercase;
     @include text-caption-bold;
-    color: $color-accent;
     margin-left: 16px;
     border: none;
     background: none;
     padding: 0;
+    cursor: pointer;
     &:focus {
       outline: none;
     }
+  }
+
+  .undo {
+    color: $color-red;
+  }
+  .dismiss {
+    
+    color: $color-accent;
   }
 }
 

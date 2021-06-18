@@ -1,0 +1,55 @@
+.coins-notification {
+  max-width: 320px;
+  padding: 16px 12px;
+  border: 1px solid $color-separator;
+  border-radius: 4px;
+  box-shadow: $shadow-dropdown;
+  background-color: $color-white;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 10;
+  @include animation('notification-appear .7s ease-out');
+
+  .title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    .notification-title {
+      flex-grow: 2;
+      @include text-body-2;
+      color: $color-black-7;
+      padding: 0 12px;
+    }
+    .icn {
+      font-size: 24px;
+      line-height: 24px;
+    }
+    .dismiss {
+      border: none;
+      padding: 0;
+      background: 0;
+      cursor: pointer;
+    }
+  }
+  .notification-body {
+    padding-left: 36px;
+    @include text-body-1;
+    color: $color-black;
+    .buttons-row {
+      margin-top: 8px;
+    }
+  }
+}
+
+
+@include keyframes(notification-appear) {
+  0%, 60% { 
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% { 
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}

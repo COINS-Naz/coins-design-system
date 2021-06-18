@@ -669,3 +669,16 @@ html {
     @include text-body-1;
   }
 }
+
+
+
+// fixed and absolute overrides for snippets
+
+.snippet-block .preview {
+  .coins-toast,
+  .coins-notification {
+    position: static;
+    transform: none;
+    animation: none;
+  }
+}
