@@ -12,6 +12,7 @@
   background-color: $color-black-active;
   border-radius: 4px;
   @include animation('toast-appear 1s ease-out');
+  display: none;
 
   .undo, .dismiss {
     text-transform: uppercase;

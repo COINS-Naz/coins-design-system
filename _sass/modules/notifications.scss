@@ -1,15 +1,22 @@
+.coins-notification-container {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 10;
+}
 .coins-notification {
+  display: none;
   max-width: 320px;
   padding: 16px 12px;
   border: 1px solid $color-separator;
   border-radius: 4px;
   box-shadow: $shadow-dropdown;
   background-color: $color-white;
-  position: fixed;
-  bottom: 32px;
-  right: 32px;
-  z-index: 10;
   @include animation('notification-appear .7s ease-out');
+
+  & + .coins-notification {
+    margin-top: 16px;
+  }
 
   .title-row {
     display: flex;

@@ -108,9 +108,11 @@ High short-term importance message notifying users of important information, war
 
 Toasts - appear in the bottom center of the viewport (sticky to the bottom of the screen).
 
-We use them to provide a feedback based on the user interaction.
+We use them to provide feedback based on the user interaction.
 
 The user can discard them or they are automatically hidden after certain period of time.
+
+The UNDO action is <span class="snip">optional</span> but would undo the users action. If the user reloads the page the toast message should be gone.
 
 {% include snippet.html code='
 <div class="coins-toast">
@@ -122,9 +124,9 @@ The user can discard them or they are automatically hidden after certain period 
 
 Click on this button to view the demo of a toast message:
 
-<button id="toast-demo" class="button small">Show toast message</button>
+<button id="toast-demo" class="button small icon"><i class="icn icn-Arrow-Right"></i> Show toast message</button>
 
-<div id="toast-demo-msg" class="coins-toast" style="display: none;">
+<div id="toast-demo-msg" class="coins-toast">
   Button clicked!
   <button class="dismiss">Ok</button>
 </div>
@@ -133,57 +135,79 @@ Click on this button to view the demo of a toast message:
 <br>
 ### System Notification
 
-These cover system feedback such as warnings and messages the user must take note of, such as warnings about system changes.
+These cover system feedback such as warnings and messages the user must take note of, or warnings about system changes.
 
 Notices appear in the lower corner of the right-hand viewport edge.
 
-The notice can be discarded by the user. We use them when notification that is pushed by the application.
+We use these when notification are pushed by the application.
 
-The actions on the notifications are <span class="snip">optional</span>.
+The notice can be discarded by the user. The actions on the notifications are <span class="snip">optional</span>.
 
 {% include snippet.html code='
-<div class="coins-notification">
-  <div class="title-row">
-    <i class="icn icn-Bell"></i>
-    <div class="notification-title">Notification Title</div>
-    <button class="dismiss">
-      <i class="icn icn-Close"></i>
-    </button>
-  </div>
-  <div class="notification-body">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-    <div class="buttons-row">
-      <button class="button small">Action</button>
-      <button class="button small primary">Action</button>
+<!-- A container which can hold multiple notifications -->
+<div class="coins-notification-container">
+  <!-- Notification -->
+  <div class="coins-notification">
+    <div class="title-row">
+      <i class="icn icn-Bell"></i>
+      <div class="notification-title">Notification Title</div>
+      <button class="dismiss">
+        <i class="icn icn-Close"></i>
+      </button>
+    </div>
+    <div class="notification-body">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+      <div class="buttons-row">
+        <button class="button small">Action</button>
+        <button class="button small primary">Action</button>
+      </div>
     </div>
   </div>
+  <!-- / End Notification -->
 </div>
 ' %}
 
 
 Click on this button to view the demo of a notification message:
 
-<button id="notification-demo" class="button small">Show notification</button>
+<button id="notification-demo" class="button small icon"><i class="icn icn-Arrow-Right"></i> Show notification</button>
 <br>
 
 <div class="coins-alert error">Note: These should not be triggered after a user action and instead be a system message to a user.</div>
 
-<div id="notification-demo-msg" class="coins-notification" style="display: none;">
-  <div class="title-row">
-    <i class="icn icn-Bell"></i>
-    <div class="notification-title">Coins Design System</div>
-    <button class="dismiss">
-      <i class="icn icn-Close"></i>
-    </button>
+<div class="coins-notification-container">
+  <!-- Demo notification 1 -->
+  <div id="notification-demo-msg" class="coins-notification">
+    <div class="title-row">
+      <i class="icn icn-Bell"></i>
+      <div class="notification-title">Coins Design System</div>
+      <button class="dismiss">
+        <i class="icn icn-Close"></i>
+      </button>
+    </div>
+    <div class="notification-body">
+      This is a system message from the COINS Design System. The actions below are optional.
+      <div class="buttons-row">
+        <button id="notification-demo-2" class="button small">Show one more</button>
+      </div>
+    </div>
   </div>
-  <div class="notification-body">
-    This is a system message from the COINS Design System. These actions below are optional.
-    <div class="buttons-row">
-      <button class="button small">Action</button>
-      <button class="button small primary">Action</button>
+  <!-- Demo notification 2 -->
+  <div id="notification-demo-msg-2" class="coins-notification">
+    <div class="title-row">
+      <i class="icn icn-Bell"></i>
+      <div class="notification-title">Coins Design System</div>
+      <button class="dismiss">
+        <i class="icn icn-Close"></i>
+      </button>
+    </div>
+    <div class="notification-body">
+      This is a second notification from the COINS Design System
     </div>
   </div>
 </div>
+
+
 
 <!-- Demo's -->
 <script>
@@ -205,6 +229,14 @@ Click on this button to view the demo of a notification message:
     // Hide Notification
     $('#notification-demo-msg .dismiss').click(function(event) {
       $('#notification-demo-msg').hide();
+    });
+    // Show Second Notification
+    $('#notification-demo-2').click(function(event) {
+      $('#notification-demo-msg-2').show();
+    });
+    // Hide Notification
+    $('#notification-demo-msg-2 .dismiss').click(function(event) {
+      $('#notification-demo-msg-2').hide();
     });
   });
 </script>

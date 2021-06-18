@@ -676,9 +676,11 @@ html {
 
 .snippet-block .preview {
   .coins-toast,
+  .coins-notification-container,
   .coins-notification {
     position: static;
     transform: none;
     animation: none;
+    display: block;
   }
 }
