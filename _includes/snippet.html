@@ -1,7 +1,10 @@
 <div class="snippet-block">
-  <div class="preview">
-    {{include.code}}
-  </div>
+  {% if include.norender == true %}
+  {% else %}
+    <div class="preview">
+      {{include.code}}
+    </div>
+  {% endif %}
   <div class="snippet">
     <pre>
       <code>

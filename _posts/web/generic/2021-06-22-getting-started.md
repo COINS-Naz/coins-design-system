@@ -7,13 +7,13 @@ subtitle: "This page describes how to get started using the COINS Web CSS Librar
 permalink: /css/web-css-library/
 ---
 
-## Overview
+## Getting Started
 
 To use the components described in this Design System you simply need to include the following style reference into your project and then build the layout using the existing snippets.
 
 
-{% include snippet.html render=false code='
-&#60;link rel="stylesheet" href="https://coins-global.github.io/coins-design-system/assets/css/local.css">
+{% include snippet.html norender=true code='
+<link rel="stylesheet" href="https://coins-global.github.io/coins-design-system/assets/css/local.css">
 ' %}
 
 ## Demo or Further help
