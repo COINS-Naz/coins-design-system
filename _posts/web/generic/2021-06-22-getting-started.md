@@ -1,10 +1,10 @@
 ---
 layout: post
 category: "Web"
-tag: "Generic"
+tag: "CSS Library"
 title: COINS Web CSS Library
 subtitle: "This page describes how to get started using the COINS Web CSS Library"
-permalink: /generic/web-css-library/
+permalink: /css/web-css-library/
 ---
 
 ## Overview
