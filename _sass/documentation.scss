@@ -506,6 +506,10 @@ html {
     td {
       vertical-align: top;
       border-bottom: 1px solid $color-separator;
+      img {
+        border: none;
+        margin: 0;
+      }
     }
   }
   .download-link {
