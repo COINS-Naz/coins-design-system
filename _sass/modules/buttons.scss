@@ -92,7 +92,19 @@
         background-repeat: no-repeat;
       }
       &.marketplace:before {
-        background-image: url('../assets/Product_Construction_Marketplace_Color.svg');
+        background-image: url('../Construction_Marketplace_Color.svg');
+      }
+      &.oa:before {
+        background-image: url('../OA_Color.svg');
+      }
+      &.pop-apps:before {
+        background-image: url('../Pop_Apps_Color.svg');
+      }
+      &.scm:before {
+        background-image: url('../SCM_Color.svg');
+      }
+      &.electronic-trading:before {
+        background-image: url('../Electronic_Trading_Color.svg');
       }
     }
   }
