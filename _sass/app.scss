@@ -57,3 +57,17 @@ hr {
   margin: 16px 0;
 }
 
+
+
+@keyframes loader-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+loader .icn {
+  animation: loader-spin 1s linear infinite;
+}
