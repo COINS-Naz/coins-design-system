@@ -39,6 +39,6 @@ The call to action takes the form of a secondary button. The label should be dir
 Occasionally, the message can also include a help link to provide supplemental information about the content.
 
 ### Example usage
-![Coins Construction Cloud - Design System - UI Module - Empty States]({{site.baseurl}}/Example_Empty_States.png)
+![Coins Construction Cloud - Design System - UI Module - Empty States]({{site.baseurl}}/img/Example_Empty_States.png)
 
 ## Live Preview
