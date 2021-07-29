@@ -23,14 +23,17 @@ They are most commonly seen the first time a user interacts with a product or pa
 
 Empty states are composed of 3 elements: the illustration, description, and call to action.
 1. Illustration
+
 The illustration should compliment the need for the empty state. It’s optional, but strongly recommended to help the user understand the situation and add personality.
 Use illustrations judiciously—too many can be busy and confusing.
 Create a new illustration only if you can’t find an existing one that works.
 
 2. Description
+
 A description includes a title and message. It should be clear, concise, and explain why the user is seeing this screen. Where possible, write this as a positive statement. In this example, “Start by adding data assets” feels more positive than “You don’t have any data assets.” Alternatively, you could say “You don’t have any data assets yet”.
 
 3. Call to action
+
 The call to action takes the form of a secondary button. The label should be direct and actionable.
 
 Occasionally, the message can also include a help link to provide supplemental information about the content.
