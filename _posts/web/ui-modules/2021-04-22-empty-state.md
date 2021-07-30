@@ -15,27 +15,28 @@ They are most commonly seen the first time a user interacts with a product or pa
 
 ### When to use
 
-1. No data empty states (first time use, no data yet). User understands what will be available on the page when data has been added or is available. They understand how to add data themselves.
-2. User action empty states (provides feedback based on some user action. For example: no results when searching). User understands how to adjust search terms or filters to continue their search.
-3. Error management empty states (Permissions issue, systems issue, configuration required), no internet connection, etc.) User understands the problem and if there are corrective actions available, knows what action to take or has options to correct the issue.
+1. No data empty states (first time use, no data yet).<br>
+User understands what will be available on the page when data has been added or is available. They understand how to add data themselves.
+
+2. User action empty states (provides feedback based on some user action. For example: no results when searching). <br>
+User understands how to adjust search terms or filters to continue their search.
+
+3. Error management empty states (Permissions issue, systems issue, configuration required), no internet connection, etc.) <br>
+User understands the problem and if there are corrective actions available, knows what action to take or has options to correct the issue.
 
 ## Guidelines
 
 Empty states are composed of 3 elements: the illustration, description, and call to action.
-1. Illustration
-
+1. Illustration <br>
 The illustration should compliment the need for the empty state. It’s optional, but strongly recommended to help the user understand the situation and add personality.
 Use illustrations judiciously—too many can be busy and confusing.
 Create a new illustration only if you can’t find an existing one that works.
 
-2. Description
-
+2. Description <br>
 A description includes a title and message. It should be clear, concise, and explain why the user is seeing this screen. Where possible, write this as a positive statement. In this example, “Start by adding data assets” feels more positive than “You don’t have any data assets.” Alternatively, you could say “You don’t have any data assets yet”.
 
-3. Call to action
-
+3. Call to action <br>
 The call to action takes the form of a secondary button. The label should be direct and actionable.
-
 Occasionally, the message can also include a help link to provide supplemental information about the content.
 
 ### Example usage
