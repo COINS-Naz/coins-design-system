@@ -35,8 +35,11 @@ Make sure interactive elements within the collapsible region are far enough from
 **Differ content visually.**<br>
 The content in the accordion body should be visually different from the rest of the page as it is secondary information. The accordion body is always displayed below its header. Use spacing  and/or hierarchy to structure the body content. 
 
-### Example usage
-![Coins Construction Cloud - Design System - UI Module - Accordion]({{site.baseurl}}/img/Example_Usage_Accordion.png)
+### Example usage in Grids
+![Coins Construction Cloud - Design System - UI Module - Accordion]({{site.baseurl}}/img/Example_Accordion_Grids.png)
+
+### Example usage in Lists
+![Coins Construction Cloud - Design System - UI Module - Accordion]({{site.baseurl}}/img/Example_Accordion_Lists.png)
 
 ### Live preview
 Include code snippet here
