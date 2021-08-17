@@ -1,0 +1,36 @@
+<script>
+
+if ($('.sticky-nav').length) {
+  var stickyNav = $('.sticky-nav');
+
+  function buildStickyNav() {
+    $('.jekyll-content h2').each(function(index, el) {
+      var id = el.id,
+          title = $(el).text();
+      stickyNav.append('<li><a href="#'+id+'">'+title+'</a></li>');
+    });
+  }
+
+  function activeStickyNavClasses() {
+    // if after h2
+    $('.jekyll-content h2').each(function(index, el) {
+      var id = el.id;
+      if ($(window).scrollTop() > $(el).offset().top - 100 ) {
+        $('.sticky-nav li a[href="#'+id+'"]').parent('li').addClass('active').siblings('li').removeClass('active');
+      }
+      // if at bottom
+      if($(window).scrollTop() + $(window).height() == $(document).height()) {
+       stickyNav.find('li:last-child').addClass('active').siblings('li').removeClass('active');
+      }
+    });
+  }
+
+  buildStickyNav();
+  activeStickyNavClasses();
+  stickyNav.find('li:first-child').addClass('active').siblings('li').removeClass('active');
+  // scroll event to change active classes
+  $(document).on('scroll', function(event) {
+    activeStickyNavClasses();
+  });
+}
+</script>

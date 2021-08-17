@@ -11,6 +11,7 @@
         <h1>{{page.title}}</h1>
         <p>{{page.subtitle}}</p>
       </div>
+      {% include sticky-sidebar.html %}
       <div class="jekyll-content">
         {{ content }}
         {% include edit-on-github.html %}
@@ -27,6 +28,7 @@
   <!-- Documentation.js -->
   <script src="{{ site.baseurl }}/js/tabs.js"></script>
   <script src="{{ site.baseurl }}/js/documentation.js"></script>
+  {% include sticky-sidebar-js.html %}
 </body>
 
 </html>
