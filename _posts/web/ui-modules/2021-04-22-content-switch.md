@@ -77,14 +77,14 @@ The content switcher includes two content tab states: selected and unselected. T
 
 <!-- Content switch -->
 <!-- Content switch tab 1 -->
-{% capture type-default %}
+{% capture state-default %}
 {% include snippet.html code='
 insert code snippet 3 here
 ' %}
 {% endcapture %}
 
 <!-- Content switch tab 2 -->
-{% capture type-selected %}
+{% capture state-selected %}
 {% include snippet.html code='
 insert code snippet 4 here
 ' %}
@@ -92,8 +92,8 @@ insert code snippet 4 here
 
 <!-- Render Content -->
 {% include content-switch.html for="type"
-           content-1-label="With Text" content-1=type-default
-           content-2-label="With Icon" content-2=type-selected
+           content-1-label="Default" content-1=state-default
+           content-2-label="Selected" content-2=state-selected
 %}
 <!-- End content switch -->
 
