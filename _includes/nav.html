@@ -2,5 +2,11 @@
   <!-- Navbar content -->
   <h2><a class="nav-link" href="{{ site.baseurl }}/">{{site.title}}</a></h2>
   {% include search.html %}
-  <img class="coins-logo" src="{{ site.baseurl }}/assets/coins-logo.jpg">
+  <div class="toggle-logo">
+    <label class="toggle">
+      <input type="checkbox" id="dark-mode">
+      <span>Dark Mode</span>
+    </label>
+    <img class="coins-logo" src="{{ site.baseurl }}/assets/coins-logo.jpg">
+  </div>
 </nav>

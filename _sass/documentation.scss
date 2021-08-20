@@ -836,3 +836,10 @@ html {
     }
   }
 }
+
+.toggle-logo {
+  @include vertical-align;
+  .toggle {
+    margin-right: 32px;
+  }
+}

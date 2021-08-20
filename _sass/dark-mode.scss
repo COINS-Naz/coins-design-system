@@ -1,0 +1,285 @@
+.dark-mode {
+  background-color: $color-black-active;
+  color: $color-white-70;
+
+  // Top Nav
+  .top-nav {
+    background-color: $color-black-active;
+    border-color: $color-separator-dark;
+    .nav-link {
+      color: $color-white-70;
+    }
+  }
+
+  // Sidebar
+  .sidebar {
+    background-color: $color-black-active;
+    border-color: $color-separator-dark;
+    .back-button {
+      color: $color-white-70;
+      background-color: $color-black-7;
+    }
+    .sidebar-section-title span {
+      color: $color-white-50;
+    }
+    .sidebar-section {
+      border-color: $color-separator-dark;
+    }
+    .sidebar-menu-items a {
+      color: $color-white-70;
+      &.active {
+        color: $color-white;
+      }
+    }
+  }
+
+  // design system
+  .doc-title {
+    color: $color-white;
+  }
+
+  .news-post {
+    background-color: $color-black-7;
+    border-color: $color-separator-dark;
+    .news-post-date,
+    .news-post-receipt {
+      color: $color-white-50;
+    }
+    .news-post-title {
+      color: $color-white-70;
+    }
+  }
+
+  .doc-card {
+    background-color: $color-black-7;
+    border: 1px solid $color-separator-dark;
+    .doc-card-title {
+      color: $color-white-70;
+    }
+  }
+
+  &.design-system {
+    .content {
+      background-color: $color-black-3;
+    }
+    .child-page-hero {
+      background-color: $color-black-active;
+      color: $color-white;
+      border-color: $color-separator-dark;
+      p {
+        color: $color-white-70;
+      }
+    }
+    .jekyll-content {
+      p {
+        color: $color-white-70;
+      }
+      .download-link {
+        background-color: $color-black;
+        color: $color-white-70;
+        border-color: $color-separator-dark
+      }
+      ul, ol {
+        color: $color-white-70;
+      }
+      hr {
+        border-color: $color-separator-dark;
+      }
+      .doc-table {
+        th {
+          background-color: $color-black-active;
+          color: $color-white-70;
+        }
+        td {
+          background-color: $color-black-7;
+          color: $color-white-70;
+          border-color: $color-black-active;
+        }
+      }
+    }
+    .snippet-block {
+      border-color: $color-black-active;
+      .preview {
+        background-color: $color-black-3;
+      }
+    }
+  }
+
+  .hljs {
+    background-color: $color-black-active;
+    color: $color-white-70;
+  }
+
+  .icon-grid {
+    .icon-block {
+      border-right: 1px solid $color-separator-dark;
+      border-bottom: 1px solid $color-separator-dark;
+      &:first-child {
+        border-left: 1px solid $color-separator-dark;
+      }
+      &:nth-child(-n + 5) {
+        border-top: 1px solid $color-separator-dark;
+      }
+      &:nth-child(5n + 1) {
+        border-left: 1px solid $color-separator-dark;
+      }
+    }
+  }
+
+  .snip {
+    background-color: rgba($color-white,.1);
+    color: $color-white-70;
+  }
+
+  .icon-grid .icon-block .preview {
+    background-color: $color-black;
+  }
+
+  .sticky-nav li {
+    border-color: $color-separator-dark;
+    a {
+      color: $color-white-70;
+    }
+  }
+
+  .guideline .do img,
+  .guideline .dont img {
+    background-color: $color-white-70;
+    border-color: $color-black-active;
+  }
+
+  .search-no-results p {
+    color: $color-white-70;
+  }
+
+  .search-result-item a {
+    background-color: $color-black-7;
+    .search-result-receipt {
+      color: $color-white-50;
+    }
+    .search-result-category {
+      color: $color-white-70;
+    }
+  }
+
+  // Components
+  .button {
+    background-color: $color-black;
+    color: $color-white-70;
+    &:hover {
+      background-color: $color-black-7;
+    }
+    &.primary {
+      background-color: $color-black-active;
+      &:hover {
+        background-color: $color-separator-dark;
+      }
+    }
+  }
+
+  .checkbox, .radio {
+    color: $color-white-70;
+    span:before {
+      background-color: $color-white-50;
+      border-color: $color-black-active;
+    }
+    input[type="checkbox"]:checked + span:before {
+      background-color: $color-separator-dark;
+      border-color: $color-separator-dark;
+    }
+  }
+  .radio {
+    input[type="checkbox"]:checked + span:after {
+      background-color: $color-separator-dark;
+    }
+  }
+
+  .input {
+    background-color: $color-black;
+    input,
+    select,
+    textarea {
+      color: $color-white-70;
+
+      &::placeholder {
+        color: $color-white-50;
+      }
+    }
+  }
+  .with-label .label {
+    color: $color-white-50;
+  }
+
+  [data-tooltip-top],
+  [data-tooltip-left],
+  [data-tooltip-bottom],
+  [data-tooltip-right] {
+    &:before {
+      background-color: $color-separator-dark;
+    }
+  }
+
+  .content-switch li {
+    color: $color-white-70;
+    background-color: transparent;
+
+    &.active {
+      color: $color-white;
+      background-color: $color-black;
+    }
+  }
+
+  .toggle {
+    span:before {
+      background-color: $color-black-active;
+    }
+
+    input[type="checkbox"]:checked+span:before {
+      background-color: $color-white-50;
+    }
+
+    input[type="checkbox"]:checked+span:after {
+      background-color: $color-white;
+    }
+  }
+
+  .badge {
+    border-color: $color-white-50;
+    color: $color-white-70;
+    background-color: $color-black-3;
+    &.success {
+      color: $color-white;
+      background-color: $color-green;
+      border-color: $color-green;
+    }
+    &.warning {
+      color: $color-black;
+      background-color: $color-yellow;
+      border-color: $color-yellow;
+    }
+    &.danger {
+      color: $color-white;
+      background-color: $color-red;
+      border-color: $color-red;
+    }
+    &.muted {
+      color: $color-white-50;
+      background-color: $color-black-7;
+      border-color: $color-black-7;
+    }
+  }
+
+  .avatar {
+    color: $color-white-70;
+    border-color: #BFBFBF;
+  }
+
+  .coins-notification {
+    background-color: $color-black-7;
+    .title-row .notification-title,
+    .title-row .dismiss,
+    .notification-body {
+      color: $color-white-70;
+    }
+  }
+}
