@@ -42,7 +42,7 @@ The width of each individual content tab should be based on the width of the tex
   do-img="Guidelines_CSwitch_Do.png"
   do-text="Set the width of the tab based on the width of the text and same left and right 12 px paddings"
   dont-img="Guidelines_CSwitch_Do_Not.png"
-  dont-text="Do not base make all the tabs the same width."
+  dont-text="Do not make all the tabs the same width."
 %}
 
 ## Type
