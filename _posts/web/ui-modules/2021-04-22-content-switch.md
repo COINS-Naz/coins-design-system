@@ -36,13 +36,13 @@ Only one content section can be shown at a time. The first content tab in the sw
 The content switcher includes two content tab states: selected and unselected. The selected state uses a high contrast color.<br>
 
 **Width**
-Each individual content tab should be the same width.<br>
+The width of each individual content tab should be based on the width of the text label and 12px paddings on the left and right sides.<br>
 
 {% include do-dont.html 
-  do-img="Guidelines_CoSwitcher_Do.png"
-  do-text="Do base content tab width on the longest text label."
-  dont-img="Guidelines_CoSwitcher_Do_Not.png"
-  dont-text="Do not use a different width for each content tab."
+  do-img="Guidelines_CSwitch_Do.png"
+  do-text="Set the width of the tab based on the width of the text and same left and right 12 px paddings"
+  dont-img="Guidelines_CSwitch_Do_Not.png"
+  dont-text="Do not base make all the tabs the same width."
 %}
 
 ## Type
