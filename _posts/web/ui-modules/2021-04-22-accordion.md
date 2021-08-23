@@ -41,5 +41,6 @@ The content in the accordion body should be visually different from the rest of 
 ### Example usage in Lists
 ![Coins Construction Cloud - Design System - UI Module - Accordion]({{site.baseurl}}/img/Example_Accordion_Lists.png)
 
+
 ### Live preview
 Include code snippet here
