@@ -282,4 +282,20 @@
       color: $color-white-70;
     }
   }
+
+  .accordion {
+    .accordion-title {
+      background-color: $color-black-active;
+      &:hover {
+        background-color: $color-black-7;
+      }
+    }
+    .accordion-line {
+      border-bottom-color: $color-separator-dark;
+      &.expanded .accordion-title {
+        background-color: transparent;
+      }
+    }
+  }
+  // ---
 }

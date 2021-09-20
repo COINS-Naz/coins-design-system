@@ -1,4 +1,5 @@
 .accordion {
+  width: 100%;
   .accordion-line {
     border-bottom: 1px solid $color-separator;
     // Content
@@ -16,7 +17,7 @@
       height: auto;
       opacity: 1;
       max-height: 9999px;
-      padding: 8px;
+      padding: 8px 8px 16px;
     }
     // Title
     .accordion-title {
@@ -53,5 +54,3 @@
     }
   }
 }
-
-
