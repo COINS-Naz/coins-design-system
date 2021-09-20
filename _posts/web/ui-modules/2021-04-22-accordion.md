@@ -42,4 +42,40 @@ The content in the accordion body should be visually different from the rest of 
 ![Coins Construction Cloud - Design System - UI Module - Accordion]({{site.baseurl}}/img/Example_Accordion_Lists2.png)
 
 ### Live preview
-Include code snippet here
+{% include snippet.html code='
+<div class="accordion">
+  <div class="accordion-line">
+    <div class="accordion-title">How do I extend COINS components?</div>
+    <div class="accordion-content">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore dolores, quas impedit corporis nobis, eligendi molestias nam eaque placeat sed natus! Officiis optio distinctio iste, corrupti necessitatibus fugit deleniti illum.
+    </div>
+  </div>
+  <div class="accordion-line">
+    <div class="accordion-title">What is the COINS Design System?</div>
+    <div class="accordion-content">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore dolores, quas impedit corporis nobis, eligendi molestias nam eaque placeat sed natus! Officiis optio distinctio iste, corrupti necessitatibus fugit deleniti illum.
+    </div>
+  </div>
+  <div class="accordion-line">
+    <div class="accordion-title">I see a bug. How do I report it?</div>
+    <div class="accordion-content">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore dolores, quas impedit corporis nobis, eligendi molestias nam eaque placeat sed natus! Officiis optio distinctio iste, corrupti necessitatibus fugit deleniti illum.
+    </div>
+  </div>
+  <div class="accordion-line">
+    <div class="accordion-title">What can I expect for a response to my bug report?</div>
+    <div class="accordion-content">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore dolores, quas impedit corporis nobis, eligendi molestias nam eaque placeat sed natus! Officiis optio distinctio iste, corrupti necessitatibus fugit deleniti illum.
+    </div>
+  </div>
+</div>
+' %}
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) { 
+    $('.accordion-title').click(function() {
+      $(this).parent('.accordion-line').toggleClass('expanded');
+    });
+  });
+</script>
