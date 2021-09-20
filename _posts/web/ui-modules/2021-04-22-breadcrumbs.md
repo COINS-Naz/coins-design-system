@@ -45,3 +45,11 @@ Use breadcrumbs for nested navigation, with each item acting as a link. They sho
 %}
 
 ## Live Preview
+{% include snippet.html code='
+<div class="breadcrumbs">
+  <div class="breadcrumbs-item"><a href="#">COINS Design System</a></div>
+  <div class="breadcrumbs-item"><a href="#">Web</a></div>
+  <div class="breadcrumbs-item"><a href="#">UI Modules</a></div>
+  <div class="breadcrumbs-item">Breadcrumbs</div>
+</div>
+' %}
