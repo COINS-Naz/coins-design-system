@@ -17,7 +17,6 @@ a {
 }
 
 
-
 ///////////////////////////////////
 // Headings
 ///////////////////////////////////
@@ -35,4 +34,158 @@ h2 {
 h5 {
   @include text-body-2;
   margin-bottom: 0;
+}
+
+
+///////////////////////////////////
+// Text classes
+///////////////////////////////////
+
+.text-display-4 {
+  @include text-display-4;
+}
+.text-display-3 {
+  @include text-display-3;
+}
+.text-display-2 {
+  @include text-display-2;
+}
+.text-display-1 {
+  @include text-display-1;
+}
+.text-headline {
+  @include text-headline;
+}
+.text-title {
+  @include text-title;
+}
+.text-subheading {
+  @include text-subheading;
+}
+.text-subheading-bold {
+  @include text-subheading-bold;
+}
+.text-body-2 {
+  @include text-body-2;
+}
+.text-body-2-bold {
+  @include text-body-2-bold;
+}
+.text-body-1 {
+  @include text-body-1;
+}
+.text-body-1-bold {
+  @include text-body-1-bold;
+}
+.text-caption {
+  @include text-caption;
+}
+.text-caption-bold {
+  @include text-caption-bold;
+}
+.text-small {
+  @include text-small;
+}
+.text-small-bold {
+  @include text-small-bold;
+}
+.text-small-xs {
+  @include text-small-xs;
+}
+.text-small-xs-bold {
+  @include text-small-xs-bold;
+}
+.text-button {
+  @include text-button;
+}
+
+
+///////////////////////////////////
+// Text color classes
+///////////////////////////////////
+
+.text-color-black {
+  color: $color-black;
+}
+.text-color-black-7 {
+  color: $color-black-7;
+}
+.text-color-black-3 {
+  color: $color-black-3;
+}
+
+.text-color-black-active {
+  color: $color-black-active;
+}
+
+// Light
+.text-color-white {
+  color: $color-white;
+}
+.text-color-white-50 {
+  color: $color-white-50;
+}
+.text-color-white-70 {
+  color: $color-white-70;
+}
+.text-color-light-grey {
+  color: $color-light-grey;
+}
+
+// System
+.text-color-accent {
+  color: $color-accent;
+}
+.text-color-separator {
+  color: $color-separator;
+}
+.text-color-separator-dark {
+  color: $color-separator-dark;
+}
+.text-color-input {
+  color: $color-input;
+}
+
+
+// Notifications
+.text-color-green {
+  color: $color-green;
+}
+.text-color-yellow {
+  color: $color-yellow;
+}
+.text-color-red {
+  color: $color-red;
+}
+
+// Brand
+.text-color-OM {
+  color: $color-OM;
+}
+.text-color-SCM {
+  color: $color-SCM;
+}
+.text-color-OPS {
+  color: $color-OPS;
+}
+.text-color-PM {
+  color: $color-PM;
+}
+.text-color-FIN {
+  color: $color-FIN;
+}
+.text-color-AM {
+  color: $color-AM;
+}
+.text-color-HR {
+  color: $color-HR;
+}
+.text-color-SM {
+  color: $color-SM;
+}
+.text-color-CC {
+  color: $color-CC;
+}
+.text-color-CCC {
+  color: $color-CCC;
 }

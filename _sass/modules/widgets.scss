@@ -1,20 +1,91 @@
-.widget-area {
+.card-area {
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
-  &+.widget-area {
+  width: 100%;
+  &+.card-area {
     margin-bottom: 16px;
   }
 }
-.widget {
+.card {
   padding: 12px 16px 32px;
   background-color: $color-white;
   border: 1px solid $color-separator;
   border-radius: 4px;
   position: relative;
-
-  &+.widget {
+  flex: 1;
+  .card-header {
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-title {
+      @include text-body-2-bold;
+    }
+  }
+  &+.card {
     margin-left: 16px;
+  }
+  &.tile {
+    flex: unset;
+    width: auto;
+    cursor: pointer;
+    display: flex;
+    padding: 16px;
+    border-radius: 4px;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color .3s ease-out;
+    color: $color-black;
+    background: $color-white;
+    border: 1px solid $color-separator;
+    &:hover {
+      background-color: $color-input;
+    }
+    .tile-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      margin-right: 16px;
+      border-radius: 25px;
+      box-shadow: inset 1px 1px 4px $color-white-50, inset -1px -1px 4px $color-separator;
+      background: linear-gradient(135deg, #9A9A9A 0%, #575757 100%);
+      &.blue {
+        background: linear-gradient(135deg, #53B6F2 0%, #308CC4 100%);
+      }
+      &.teal {
+        background: linear-gradient(135deg, #2ED9C3 0%, #28B4A2 100%);
+      }
+      &.yellow {
+        background: linear-gradient(135deg, #FFBF3C 0%, #F0A60D 100%);
+      }
+      &.green {
+        background: linear-gradient(135deg, #77E351 0%, #59B339 100%);
+      }
+      &.red {
+        background: linear-gradient(135deg, #F18078 0%, #E16057 100%);
+      }
+      &.purple {
+        background: linear-gradient(135deg, #A885F2 0%, #805DCA 100%);
+      }
+
+      .icn {
+        font-size: 28px;
+        line-height: 28px;
+        height: 28px;
+        color: $color-white;
+      }
+    }
+    .tile-header {
+      .tile-title {
+        @include text-body-1;
+      }
+      .tile-value {
+        @include text-display-1;
+      }
+    }
   }
   &.supplier {
     flex-basis: calc(20% - 16px);
@@ -98,15 +169,15 @@
         outline: 1px solid $color-separator;
         box-shadow: none;
       }
-      &+.widget {
+      &+.card {
         margin-left: 0;
         border-left: none;
       }
     }
   }
 
-  .widget-head {
-    .widget-title {
+  .card-head {
+    .card-title {
       @include text-body-1-bold;
     }
   }
@@ -167,7 +238,7 @@
   flex-wrap: wrap;
   position: relative;
   flex: 1;
-  .widget.placeholder.product {
+  .card.placeholder.product {
     flex-basis: 25%;
   }
 }
