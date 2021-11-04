@@ -5,6 +5,7 @@ html {
 }
 
 .nav-link {
+  text-decoration: none;
   padding-left: 20px;
   color: $color-black;
 
@@ -57,6 +58,7 @@ html {
 }
 
 .news-post {
+  text-decoration: none;
   display: block;
   padding: 8px 8px 8px 20px;
   margin: 0 16px;
@@ -132,6 +134,7 @@ html {
 
 // Cards
 .doc-card {
+  text-decoration: none;
   background-color: $color-white;
   flex-basis: calc(25% - 32px);
   margin: 0 16px 32px;
@@ -565,10 +568,6 @@ html {
     color: $color-black-7;
   }
 
-  a {
-    text-decoration: underline;
-  }
-
   .button {
     text-decoration: none;
   }
@@ -859,6 +858,7 @@ html {
 
     a {
       @include text-caption;
+      text-decoration: none;
       color: $color-black;
       &:hover {
         color: $color-accent;

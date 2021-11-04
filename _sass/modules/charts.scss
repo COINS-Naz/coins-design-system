@@ -33,6 +33,24 @@
   transform: translate(6px, 1px);
 }
 
+// Chart Tooltip
+.c3-tooltip-container {
+  border-radius: 4px;
+  overflow: hidden;
+  .c3-tooltip {
+    th {
+      background: $color-light-grey;
+      color: inherit;
+    }
+    td {
+      border-left: none;
+      & > span {
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
 //////////////////////////
 
 // Hide unnecessary items

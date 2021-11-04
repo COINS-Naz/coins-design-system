@@ -297,5 +297,51 @@
       }
     }
   }
+
+  .card {
+    background-color: $color-black-active;
+  }
+
+  .snippet-block .snippet pre.collapsible .expander {
+    background-color: $color-black-7;
+    color: $color-white-50;
+    &:hover {
+      background-color: $color-black-3;
+      color: $color-white-70;
+    }
+  }
+
+  .button-icon {
+    color: $color-white-50;
+  }
+
+
+  // Charts
+  .c3-legend-item text,
+  .c3 .tick text {
+    fill: $color-white-50;
+  }
+
+  .c3 .c3-grid line {
+    stroke: $color-black-7;
+  }
+
+  .c3 .c3-chart-lines circle {
+    fill: $color-black-active;
+  }
+
+  .c3-tooltip-container {
+    .c3-tooltip {
+      tr {
+        border-color: $color-separator-dark;
+      }
+      th {
+        background: $color-black;
+      }
+      td {
+        background-color: $color-black-active;
+      }
+    }
+  }
   // ---
 }
