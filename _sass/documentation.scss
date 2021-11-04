@@ -466,6 +466,44 @@ html {
     pre {
       white-space: inherit;
       overflow: hidden;
+      &.collapsible {
+        max-height: 150px;
+        .expander {
+          display: inline-block;
+          color: $color-black;
+          text-align: center;
+          vertical-align: middle;
+          cursor: pointer;
+          user-select: none;
+          background-color: $color-white;
+          border: 1px solid $color-separator;
+          padding: 4px 12px;
+          white-space: nowrap;
+          @include text-caption-bold;
+          border-radius: 4px 4px 0 0;
+          transition: all .3s ease-in-out;
+          text-decoration: none;
+          font-family: "Lato", sans-serif;
+          position: absolute;
+          bottom: -1px;
+          left: 50%;
+          transform: translateX(-50%);
+          &:hover {
+            text-decoration: none;
+            background-color: $color-input;
+            color: $color-black;
+          }
+          &:before {
+            content: 'Expand';
+          }
+        }
+        &.expanded {
+          max-height: none;
+          .expander:before {
+            content: 'Collapse';
+          }
+        }
+      }
     }
 
     code {

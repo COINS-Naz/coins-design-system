@@ -1,9 +1,29 @@
+function toggleCodeCollapse(el) {
+  var el = $(el);
+  el.toggleClass('expanded');
+};
+
 $(document).ready(function(){
   //////////////////////
   // Code highlight
   //////////////////////
-  hljs.configure({languages: ['HTML']});
+  // hljs.configure({languages: ['HTML']});
+
+
   hljs.highlightAll();
+
+  $('.snippet pre').each(function(index, el) {
+    var el = $(el);
+    if (el.height() > 150) {
+      el.addClass('collapsible');
+      el.append( "<div class='expander'></div>" );
+    }
+  });
+
+  $('.snippet .expander').click(function(event) {
+    var el = $(this).parent('pre.collapsible');
+    toggleCodeCollapse(el);
+  });;
 
   //////////////////////
   // showTooltipFeedback

@@ -7,7 +7,7 @@
   {% endif %}
   <div class="snippet">
     <pre>
-      <code>
+      <code class="language-{{include.lang ? 'html' : include.lang }}">
         {{include.code | xml_escape}}
       </code>
     </pre>
