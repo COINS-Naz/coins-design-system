@@ -20,7 +20,7 @@
     justify-content: space-between;
     align-items: center;
     &-title {
-      @include text-body-2-bold;
+      @include text-body-2;
     }
   }
   &+.card {
