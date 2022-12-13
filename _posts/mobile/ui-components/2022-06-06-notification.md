@@ -42,6 +42,7 @@ These notifications have 2 states: collapsed and expanded. If user wants to see 
 
 ![Expandable example of usage]({{site.baseurl}}/img/Mobile_Notification_Expandable_Usage.png)
 
+
 For exporting exact component colors, sizes and fonts [Open Notification page on Figma Design System](https://www.figma.com/file/TwQ8GcLuodWXegpAArH1RC/Draft-mobile-components?node-id=995%3A18913&t=74WkjHYzoIotFeq3-1).
 
 
