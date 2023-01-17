@@ -1,7 +1,7 @@
 ---
 layout: post
 category: "Mobile and Tablet"
-tag: "UI Components"
+tag: "UI Modules"
 title: Attachment
 subtitle: "Attachment module allow users to select one or more files to upload to a specific location."
 permalink: /mobile/attachment/
