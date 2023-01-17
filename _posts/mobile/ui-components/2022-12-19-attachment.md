@@ -18,7 +18,7 @@ Different states of Attachment module. When more than 1 attachment exist, the co
 ![Attachment Module]({{site.baseurl}}/img/Mobile_Attachments_Module.png) 
 
 ### Example of usage
-Different states of Attachment module in usage. 
+When attachments exist and there is more than one file/photo attached, then we use the horizontal scroll. The title (here Attachments stays on the same place when attachments line including the button scroll horizontally). 
 ![Attachment Behaviour]({{site.baseurl}}/img/Mobile_Attachments_Behaviour.png) 
 
 For exporting exact component colors, sizes and fonts [Open Attachment page on Figma Design System](https://www.figma.com/file/TwQ8GcLuodWXegpAArH1RC/Draft-mobile-components?node-id=1013%3A18791&t=9ABgPdWYKM5ljMXF-1).
