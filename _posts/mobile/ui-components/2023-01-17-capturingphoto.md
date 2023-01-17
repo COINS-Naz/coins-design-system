@@ -13,7 +13,7 @@ There are a couple of flows that are used to capture a photo depending on produc
 ### Issue Management Photo Flow
 **Screen 1**
 
-After selecting an option Camera, the Take Photo screen is opened. It consists of
+After selecting an option Camera, the Take Photo screen is opened. It consists of:
 1. Top Bar. Includes Title (Here “Take Photo”) and a back arrow, which navigates to the previous screen.
 2. Change camera mode button. Changes camera mode from frontal to regular and vice versa.
 3. Take photo button. Tapping on this button takes a photo. And saves it to the local gallery (component below).
@@ -22,36 +22,39 @@ If the user took some photos and the value is 1-5/5 then tapping on square icon 
 If there are no photo taken and the value is 0/5 then square icon is non-tappable.
 If user is allowed to take only one photo, this icon and functionality should be hidden.
 5. Working panel backdrop. Backdrop is used to make sure that each function is visible enough. The color of the back drop should be #000000 with 20% opacity.
-6. Camera view
+6. Camera view.
 ![IM Screen 1]({{site.baseurl}}/img/Mobile_Photoflow_IM.png) 
 
 **Screen 2**
+
 Photo is captured, camera is active for taking more photos or for selecting markup option.
 1. Top Bar. Includes Title (Here “Take Photo”) and a back arrow, which closes camera flow, as per Screen 1. Also, as the first photo is taken, the new Markup option in top bar is available. Markup option navigates user to the markup screen.
 2-5. Keep the same look and functionality as in Screen 1 
-6. Taken Photo
+6. Taken Photo.
 
 ![IM Screen 2]({{site.baseurl}}/img/Mobile_Photoflow_IM2.png) 
 
 ### Clockin Booth Photo Flow
 **Screen 1**
+
 After selecting an option Camera, the Take Photo screen is opened. It consists of:
 1. Top Bar. Includes title “Take Photo” and a back button. Back Button closes the camera flow.
 2. Frame. The frame is used to give the user a hint about where and how he should stand to take a picture of proper quality and with expected format.
 3. Take photo button. Tapping on this button takes a photo. 
 4. Working panel backdrop. Backdrop is used to make sure that each function is visible enough. The color of the back drop should be #000000 with 20% opacity.
 5. Info message. Explains the user how to interact with the UI elements on the screen.
-6. Frontal Camera view
+6. Frontal Camera view.
 
 ![CB Screen 1]({{site.baseurl}}/img/Mobile_Photoflow_CB1.png) 
 
 **Screen 2**
+
 1. Top bar. Includes:
 - Title, here  “Submit Image”;
 - Submit button - saves and submits image, navigates to the next screen;
 - Retake button, which navigates you to Screen 1;
 - Back button - closes the camera flow.
-2.Taken Photo
+2.Taken Photo.
 
 ![CB Screen 2]({{site.baseurl}}/img/Mobile_Photoflow_CB2.png) 
 
