@@ -1,7 +1,7 @@
 ---
 layout: post
 category: "Mobile and Tablet"
-tag: "UI Components"
+tag: "UI Modules"
 title: Capturing signature
 subtitle: "Capturing the signature is an important part of the COINS mobile interface. By signing users usually confirm the jobs that are done, their timesheets, etc.  "
 permalink: /mobile/signature/
