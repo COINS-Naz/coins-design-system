@@ -15,7 +15,7 @@ The title on the placeholder (here in ex. “Signature”) can be hidden.
 
 ### Signature Board
 A signature board is a place where the user leaves a signature. It has 2 states: default and filled. (see the examples below). Filled state has two additional buttons: DONE and a trash icon to clear the signature. Trash icon (clear signature function) brings you to the default state screen. DONE saves the signature.
-![Signature Board]({{Mobile_Signature_Board.png) 
+![Signature Board]({{site.baseurl}}/img/Mobile_Signature_Board.png) 
 
 ## Usage
 ### Flow for signature capturing (Android)
