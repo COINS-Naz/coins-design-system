@@ -19,10 +19,10 @@ A signature board is a place where the user leaves a signature. It has 2 states:
 
 ## Usage
 ### Flow for signature capturing (Android)
-![Usage Android]({{site.baseurl}}/img/Mobile_Usage_Android.png) 
+![Usage Android]({{site.baseurl}}/img/Mobile_Signature_Usage_Android.png) 
 
 ### Flow for signature capturing (IOS)
-![Usage IOS]({{site.baseurl}}/img/Mobile_Usage_IOS.png) 
+![Usage IOS]({{site.baseurl}}/img/Mobile_Signature_Usage_IOS.png) 
 
 ### Flow for signature capturing (Tablet)
 ![Usage Tablet]({{site.baseurl}}/img/Mobile_Usage_Tablet.png) 
