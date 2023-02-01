@@ -4,28 +4,31 @@ title: COINS Design System
 description: Efficient design and development of a great and consistent experience.
 ---
 <section class="doc-thumbnails">
-  {% assign no_show_cat = "News Global Styles" %}
+  {% assign no_show_cat = "News" %}
   {% for category in site.categories %}
     {% unless no_show_cat contains category[0] %}
       {% for post in category[1] limit:1 %}
-        {% if post.categories contains "marketing" %}
-          <a class="doc-card  {{ category[0] | replace: ' ', '-' | downcase }}" href="coins-global.com/brand">
-            <div class="doc-card-image"></div>
-            <div class="doc-card-title">
-              {{ category[0] }}
-            </div>
-          </a>
-        {% else %}
-          <a class="doc-card  {{ category[0] | replace: ' ', '-' | downcase }}" href="{{ site.baseurl }}{{ post.url }}">
-            <div class="doc-card-image"></div>
-            <div class="doc-card-title">
-              {{ category[0] }}
-            </div>
-          </a>
-        {% endif %}
+        <a class="doc-card  {{ category[0] | replace: ' ', '-' | downcase }}" href="{{ site.baseurl }}{{ post.url }}">
+          <div class="doc-card-image"></div>
+          <div class="doc-card-title">
+            {{ category[0] }}
+          </div>
+        </a>
       {% endfor %}
     {% endunless %}
   {% endfor %}
+  <a class="doc-card marketing" href="coins-global.com/brand" target="_blank">
+    <div class="doc-card-image"></div>
+    <div class="doc-card-title">
+      Marketing
+    </div>
+  </a>
+  <a class="doc-card figma" href="https://www.figma.com/files/team/864564904240273722" target="_blank">
+    <div class="doc-card-image"></div>
+    <div class="doc-card-title">
+      Team Figma
+    </div>
+  </a>
 </section>
 
 <section class="news">
