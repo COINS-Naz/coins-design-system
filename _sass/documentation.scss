@@ -38,7 +38,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 80vw;
+  max-width: 90vw;
   margin: 0 auto 80px;
 }
 
@@ -136,7 +136,7 @@ html {
 .doc-card {
   text-decoration: none;
   background-color: $color-white;
-  flex-basis: calc(30% - 32px);
+  flex-basis: calc(20% - 32px);
   margin: 0 16px 32px;
   text-align: center;
   border-radius: 4px;
@@ -166,7 +166,7 @@ html {
 }
 
 .doc-card-image {
-  height: 15vw;
+  height: 10vw;
   background-color: $color-input;
   background-position: center center;
   background-repeat: no-repeat;
