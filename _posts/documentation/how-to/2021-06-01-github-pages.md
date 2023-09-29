@@ -15,7 +15,7 @@ There are a couple of required steps to be able to collaborate on this content:
 
 1. Have an existing or create a GitHub account.
 2. Be a part of the COINS Design System Repository.
-  <small><br>(Message Nazar Kulynyak ([nazar.kulynyak@coins-global.com](mailto:nazar.kulynyak@coins-global.com){:target="_blank"}) or Yan Llamas ([yan.llamas@coins-global.com](mailto:nazar.kulynyak@coins-global.com){:target="_blank"}) for an invite)</small>
+  <small><br>(Message Nazar Kulynyak ([nazar.kulynyak@theaccessgroup.international](mailto:nazar.kulynyak@theaccessgroup.international){:target="_blank"}) for an invite)</small>
 3. Follow the instructions described on this page or the [Design System Cheatsheet](../cheatsheet/). 
 
 
@@ -94,4 +94,4 @@ After this just click the "Create pull request" button. The changes proposed wil
 
 ## Demo or Further help
 
-Feel free to email Nazar Kulynyak ([nazar.kulynyak@coins-global.com](mailto:nazar.kulynyak@coins-global.com){:target="_blank"}) if you need any help or guidance.
+Feel free to email Nazar Kulynyak ([nazar.kulynyak@theaccessgroup.international](mailto:nazar.kulynyak@theaccessgroup.international){:target="_blank"}) if you need any help or guidance.
