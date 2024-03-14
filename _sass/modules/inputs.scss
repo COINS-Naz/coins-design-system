@@ -119,8 +119,8 @@
   }
   input[type="checkbox"] {
     &:checked + span:before {
-      content: $icn-Check;
-      font-family: $icoins-font-family;
+      content: "\e91e";
+      font-family: 'iCoins';
       background-color: $color-black;
       border-color: $color-black;
       .thead & {
