@@ -5,14 +5,14 @@ body {
 }
 
 a {
-  color: $color-black;
+  color: $color-accent;
   text-decoration: underline;
   &:hover {
-    color: $color-black;
+    color: $color-accent;
   }
   &.link {
     text-decoration: underline;
-    color: $color-black;
+    color: $color-accent;
   }
 }
 
