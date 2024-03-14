@@ -36,7 +36,7 @@
         }
         &:before {
           position: absolute;
-          font-family: $icoins-font-family;
+          font-family: 'iCoins';
           width: 32px;
           text-align: center;
           font-size: 24px;
@@ -50,12 +50,12 @@
       }
       &.previous_page, &.prev {
         &:before {
-          content: $icn-Chevron-Left;
+          content: "\e926";
         }
       }
       &.next_page, &.next {
         &:before {
-          content: $icn-Chevron-Right;
+          content: "\e927";
         }
       }
       .page-link {
