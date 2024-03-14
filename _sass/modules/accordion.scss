@@ -32,8 +32,8 @@
         background-color: $color-input;
       }
       &:before {
-        font-family: $icoins-font-family;
-        content: $icn-Chevron-Right;
+        font-family: "iCoins";
+        content: "\e927";
         position: absolute;
         font-size: 20px;
         line-height: 20px;
