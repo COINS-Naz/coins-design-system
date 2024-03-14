@@ -1,9 +1,12 @@
 $icoins-font-family: "iCoins" !default;
 $icoins-font-path: "../fonts" !default;
 @font-face {
-        font-family: '#{$icoins-font-family}';
-        src: url("#{$icoins-font-path}/#{$icoins-font-family}.eot?qbfi3d");
-        src: url("#{$icoins-font-path}/#{$icoins-font-family}.eot?qbfi3d#iefix") format("embedded-opentype"), url("#{$icoins-font-path}/#{$icoins-font-family}.ttf?qbfi3d") format("truetype"), url("#{$icoins-font-path}/#{$icoins-font-family}.svg?qbfi3d#iCoins") format("svg"), url("#{$icoins-font-path}/#{$icoins-font-family}.woff?qbfi3d") format("woff");
+        font-family: 'iCoins';
+        src: url("../fonts/iCoins.eot?qbfi3d");
+        src: url("../fonts/iCoins.eot?qbfi3d#iefix") format("embedded-opentype"),
+             url("../fonts/iCoins.ttf?qbfi3d") format("truetype"),
+             url("../fonts/iCoins.svg?qbfi3d#iCoins") format("svg"),
+             url("../fonts/iCoins.woff?qbfi3d") format("woff");
         font-weight: normal;
         font-style: normal;
         font-display: block
@@ -11,7 +14,7 @@ $icoins-font-path: "../fonts" !default;
 
 .icn {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: '#{$icoins-font-family}' !important;
+  font-family: 'iCoins' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
