@@ -17,8 +17,8 @@
       border-bottom: 1px dashed;
     }
     & + .breadcrumbs-item:before {
-      font-family: $icoins-font-family;
-      content: $icn-Chevron-Right;
+      font-family: "iCoins";
+      content: "\e927";
       font-size: 20px;
       line-height: 20px;
       vertical-align: text-bottom;
