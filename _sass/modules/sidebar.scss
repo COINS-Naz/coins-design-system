@@ -77,8 +77,8 @@
     background-color: $color-input;
     @include text-body-2-bold;
     &:before {
-      font-family: $icoins-font-family;
-      content: $icn-Arrow-Left;
+      font-family: 'iCoins';
+      content: "\e905";
       position: absolute;
       left: 12px;
       top: 15px;
