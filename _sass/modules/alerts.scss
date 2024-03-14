@@ -3,8 +3,8 @@
   position: relative;
   @include text-caption;
   &:before {
-    font-family: $icoins-font-family;
-    content: $icn-Info-Filled;
+    font-family: 'iCoins';
+    content: "\ea16";
     font-size: 24px;
     line-height: 24px;
     position: absolute;
@@ -24,21 +24,21 @@
   &.error {
     background-color: rgba($color-red, .3);
     &:before {
-      content: $icn-Important-Alt-Triangle-Filled;
+      content: "\ea15";
       color: $color-red;
     }
   }
   &.warning {
     background-color: rgba($color-yellow, .3);
     &:before {
-      content: $icn-Important-Filled;
+      content: "\ea14";
       color: $color-yellow;
     }
   }
   &.success {
     background-color: rgba($color-green, .3);
     &:before {
-      content: $icn-Check-Filled;
+      content: "\e9da";
       color: $color-green;
     }
   }
