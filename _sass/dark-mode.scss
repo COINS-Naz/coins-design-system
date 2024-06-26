@@ -15,7 +15,9 @@
       color: $color-white-70;
     }
   }
-
+  .coins-logo {
+    background-image: url("../COINS_Logo_Dark.svg");
+  }
   // Sidebar
   .sidebar {
     background-color: $color-black-active;
