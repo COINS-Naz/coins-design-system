@@ -557,7 +557,7 @@ html {
 
   p {
     @include text-body-1;
-    color: $color-black-7;
+    color: $color-black;
   }
 
   .button {
@@ -588,7 +588,7 @@ html {
   ul {
     padding-left: 20px;
     @include text-body-1;
-    color: $color-black-7;
+    color: $color-black;
     margin-bottom: 16px;
   }
 
